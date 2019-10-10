@@ -1,0 +1,58 @@
+.category-page-popular {
+
+  .category-heading {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    color: $link_black;
+    display: inline-block;
+    font-weight: 600;
+
+    a {
+      &.news-link {
+        color: $news_color;
+      }
+      &.business-link {
+        color: $business_color;
+      }
+      &.crops-link {
+        color: $crops_color;
+      }
+      &.markets-link {
+        color: $markets_color;
+      }
+      &.livestock-link {
+        color: $livestock_color;
+      }
+      &.weather-link {
+        color: $weather_color;
+      }
+      &.machinery-link {
+        color: $machinery_color;
+      }
+    }
+  }
+
+  .views-field-created {
+    span {
+      font-family: "Merriweather", serif;
+      letter-spacing: 1px;
+      font-size: 85%;
+    }
+  }
+
+  .views-field-title {
+    span a {
+      font-family: "Merriweather", serif;
+      color: $link_black;
+      font-weight: 600;
+    }
+  }
+  
+  .views-row {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid $border_lgrey;
+  }
+}

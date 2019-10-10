@@ -1,0 +1,44 @@
+// Contact Content style
+.agweb-contact {
+  h2 {
+    font-family: $font_montserrat;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-top: 25px;
+    margin-bottom: 0px;
+  }
+
+  h3 {
+    font-size: 14px;
+    font-family: $font_montserrat;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-top: 15px;
+  }
+
+  .contact-cash-grain-bids {
+    margin-top: 15px;
+  }
+
+  p {
+    margin-top: 10px;
+    line-height: 26px;
+    margin-bottom: 0px;
+  }
+
+  .row {
+
+    ul {
+      margin: 0px;
+
+      li {
+        list-style: none;
+
+        .link-color-green {
+          word-break: break-all;
+        }
+      }
+    }
+  }
+}

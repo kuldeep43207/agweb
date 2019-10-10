@@ -1,0 +1,46 @@
+name: Agweb
+type: theme
+description: 'Zurb Foundation Based Theme For Agweb Website.'
+package: Other
+core: 8.x
+libraries:
+  - agweb/global-styling
+  - agweb/fonts
+  - agweb/weather-widget
+
+base theme: zurb_foundation
+
+regions:
+  topbar: 'Top Bar'
+  search_top: 'Search and HB Menu'
+  site_brand: 'Site Branding'
+  weather_top: 'Weather and Subscribe'
+  header: Header
+  ad_top: 'Advertisement Top'
+  meta_header: 'Meta header'
+  help: Help
+  page_top: 'Page top'
+  page_bottom: 'Page bottom'
+  highlighted: Highlighted
+  above_content: 'Above Content'
+  content: Content
+  sidebar_first: 'Left Sidebar'
+  sidebar_second: 'Right Sidebar'
+  bottom_ad: 'Bottom Adevert'
+  footer_first: 'Footer first column'
+  footer_middle: 'Footer middle column'
+  footer_last: 'Footer last column'
+  left_off_canvas: 'Left off canvas'
+  right_off_canvas: 'Right off canvas'
+  visibility_hidden: 'Hidden Region'
+  menu_left: 'Left Menu'
+  footer_ads: 'Footer Ads'
+regions_hidden:
+  page_top: 'Page Top'
+  page_bottom: 'Page bottom'
+
+libraries-override:
+  zurb_foundation/global:
+    css:
+      base:
+        css/foundation.min.css: ../../../themes/contrib/zurb_foundation/css/foundation-flex.min.css

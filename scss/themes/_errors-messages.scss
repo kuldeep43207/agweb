@@ -1,0 +1,48 @@
+.callout {
+
+	&.alert {
+		background-color: $white;
+		color: $news_color;
+		@include error_message_shadow;
+    font-weight: 600;
+    border: 1px solid $news_color;
+    padding: 10px 20px;
+    border-radius: 3px;
+    font-size: 14px;
+
+    .close-button {
+      color: $news_color;
+      right: 7px;
+      top: 0;
+      font-size: 25px;
+
+      &:focus {
+        outline: 0;
+        box-shadow: none;
+      }
+    }
+  }
+
+  &.success {
+    background-color: $white;
+    color: $crops_color;
+    @include success_message_shadow;
+    font-weight: 600;
+    border: 1px solid $crops_color;
+    padding: 10px 20px;
+    border-radius: 3px;
+    font-size: 14px;
+
+    .close-button {
+      color: $crops_color;
+      right: 7px;
+      top: 0;
+      font-size: 25px;
+
+      &:focus {
+        outline: 0;
+        box-shadow: none;
+      }
+    }
+  }
+}

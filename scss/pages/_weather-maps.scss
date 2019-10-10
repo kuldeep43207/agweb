@@ -1,0 +1,30 @@
+.agweb-weather-maps-wrapper {
+
+  .agweb-weather-maps-links-list {
+    margin-left: 0px; 
+
+    li {
+      list-style: none;
+      padding-right: 30px;
+
+      .link-color-green {
+        font-size: 16px;
+        text-decoration: underline;
+        line-height: 30px;
+
+        &:hover {
+          color: $news_color;
+        }
+      }
+    }
+  }
+
+  .agweb-weather-maps-text {
+    margin-top: 15px;
+  }
+
+  .agweb-weather-maps-img {
+    width: 100%;
+    height: 55vh;
+  }
+}

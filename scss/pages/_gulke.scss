@@ -1,0 +1,55 @@
+.gulke-page-blocks {
+
+	header {
+
+		.field-type-text-with-summary {
+
+			img {
+				float: left;
+				width: 50%;
+        height: 280px;
+        margin-bottom: 15px;
+
+        &:first-child {
+          padding-right: 15px;
+
+          @include above-small {
+            padding-right: 0px;
+          }
+        }
+
+        @include above-small {
+          height: auto;
+          width: 100%;
+        }
+      }
+
+      p {
+        padding: 0px 15px;
+      }
+    }
+  }
+
+  footer {
+
+    .field-type-text-with-summary {
+
+      img {
+        height: 280px;
+        margin-bottom: 15px;
+        float: left;
+        padding-right: 30px;
+        width: 245px;
+
+        @include above-small {
+          height: auto;
+          width: auto;
+        }
+      }
+
+      p {
+        padding: 0px 15px;
+      }
+    }
+  }
+}

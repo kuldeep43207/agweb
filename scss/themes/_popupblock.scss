@@ -1,0 +1,27 @@
+.sliding-popup-bottom {
+  border: 1px solid $border_lgrey;
+
+  .eu-cookie-compliance-message {
+    width: auto;
+    max-width: none;
+  }
+
+  .eu-cookie-compliance-buttons {
+    width: 100%;
+    max-width: none;
+    button {
+      width: 100%;
+      background-color: $crops_color;
+      color: $white;
+      background-image: none;
+      box-shadow: none;
+      text-shadow: none;
+      outline: none;
+      font-size: 12px;
+      border-radius: 20px;
+    }
+  }
+  .eu-cookie-compliance-banner  {
+    padding: 20px;
+  }
+}

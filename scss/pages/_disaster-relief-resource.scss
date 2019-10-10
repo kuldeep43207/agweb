@@ -1,0 +1,66 @@
+.disaster-relief-resource {
+
+  .disaster-relief-resource-cols {
+    margin-bottom: 10px;
+
+    .disaster-relief-heading {
+      font-family: $font_montserrat;
+      font-size: 20px;
+      text-transform: uppercase;
+      font-weight: 600;
+      margin-bottom: 0px;
+      color: $weather_color;
+    }
+
+    .disaster-relief-list {
+      margin: 0px;
+      list-style: none;
+
+      .link-color-green {
+        line-height: 30px;
+        text-decoration: underline;
+
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+
+    .disaster-relief-subheading {
+      font-family: $font_montserrat;
+      font-size: 16px;
+      text-transform: uppercase;
+      font-weight: 600;
+      margin-bottom: 0px;
+      color: $weather_color;
+    }
+
+    #drought {
+      margin-top: 15px;
+    }
+
+    #flood {
+      margin-top: 15px;
+    }
+
+    #tornado {
+      margin-top: 15px;
+    }
+
+    #hurricane {
+      margin-top: 15px;
+    }
+
+    #hot-summer-temps {
+      margin-top: 15px;
+    }
+
+    #winter-weather {
+      margin-top: 15px;
+    }
+
+    .disaster-relief-nationwise {
+      color: $weather_color;
+    }
+  }
+}

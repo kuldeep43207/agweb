@@ -1,0 +1,89 @@
+.recent-news-wrapper {
+  margin-bottom: 50px;
+  @include small-only {
+    margin-bottom: 30px;
+  }
+
+  header {
+    a {
+      display: inline-block;
+      margin-bottom: 10px;
+      font-size: 16px;
+      font-family: $font_montserrat;
+      font-weight: 600;
+
+      @include small-only {
+        font-size: 20px;
+      }
+
+      &.markets {
+        color: $markets_color;
+      }
+
+      &.crops {
+        color: $crops_color;
+      }
+
+      &.technology {
+        color: $technology_color;
+      }
+
+      &.livestock {
+        color: $livestock_color;
+      }
+
+      &.business {
+        color: $business_color;
+      }
+
+      &.machinery {
+        color: $machinery_color;
+      }
+    }
+  }
+
+  .views-field-created {
+    span {
+      font-family: $font_merriweather;
+      font-size: 12px;
+      text-transform: uppercase;
+    }
+  }
+
+  .views-field-title {
+    min-height: 2rem;
+
+    span {
+      a {
+        color: $link_black;
+        line-height: 1.4;
+        font-weight: 600;
+        font-size: 16px;
+        font-family: $font_merriweather;
+        margin-bottom: 10px;
+        display: inline-block;
+
+        @include small-only {
+          margin-bottom: 8px;
+        }
+      }
+    }
+  }
+
+  .views-field-body {
+    p {
+      margin: 8px 0 10px;
+      line-height: 1.2;
+    }
+
+    .field-content {
+      word-break: break-word;
+    }
+  }
+
+  .views-row {
+    padding-bottom: 20px;
+    border-bottom: 1px solid $border_lgrey;
+    margin-bottom: 20px;
+  }
+}

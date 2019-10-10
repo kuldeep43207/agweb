@@ -1,0 +1,23 @@
+// Privacy Policy Content style
+.agweb-privay-policy {
+  h2, h3 {
+    font-family: $font_montserrat;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-top: 10px;
+  }
+
+  h3 {
+    font-size: 14px;
+    margin-top: 20px;
+  }
+
+  ul, ol li {
+    margin-bottom: 15px;
+  }
+
+  .italic-fonts {
+    font-style: italic;
+  }
+}

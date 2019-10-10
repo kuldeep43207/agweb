@@ -1,0 +1,101 @@
+{#
+/**
+ * @file
+ * Theme override for the basic structure of a single Drupal page.
+ *
+ * Variables:
+ * - logged_in: A flag indicating if user is logged in.
+ * - root_path: The root path of the current page (e.g., node, admin, user).
+ * - node_type: The content type for the current node, if the page is a node.
+ * - head_title: List of text elements that make up the head_title variable.
+ *   May contain or more of the following:
+ *   - title: The title of the page.
+ *   - name: The name of the site.
+ *   - slogan: The slogan of the site.
+ * - page_top: Initial rendered markup. This should be printed before 'page'.
+ * - page: The rendered page markup.
+ * - page_bottom: Closing rendered markup. This variable should be printed after
+ *   'page'.
+ * - db_offline: A flag indicating if the database is offline.
+ * - placeholder_token: The token for generating head, css, js and js-bottom
+ *   placeholders.
+ * - html_attributes: Raw HTML attributes for the <html> tag.
+ *   Contains langcode and text direction.
+ *
+ * @see template_preprocess_html()
+ */
+#}
+{%
+set body_classes = [
+logged_in ? 'user-logged-in',
+not root_path ? 'path-frontpage' : 'path-' ~ root_path|clean_class,
+node_type ? 'node--type-' ~ node_type|clean_class,
+db_offline ? 'db-offline',
+]
+%}
+<!DOCTYPE html>
+<html{{ html_attributes }} class="no-js">
+  <head>
+    <head-placeholder token="{{ placeholder_token }}">
+    <title>{{ head_title|safe_join(' | ') }}</title>
+    <css-placeholder token="{{ placeholder_token }}">
+    <js-placeholder token="{{ placeholder_token }}">
+    <script type="text/javascript">
+      window._taboola = window._taboola || [];
+      _taboola.push({article:'auto'});
+      !function (e, f, u) {
+      e.async = 1;
+      e.src = u;
+      f.parentNode.insertBefore(e, f);
+      }(document.createElement('script'),
+      document.getElementsByTagName('script')[0],
+      '//cdn.taboola.com/libtrc/agweb/loader.js');
+     </script>
+    <script>
+        var gptadslots = gptadslots || {length:0,push:function(v,k){this[(k!==undefined)?k:this.length]=v;this.length++;}};
+        var a1 = '<span class="mv1 articledfp text-center ads-between-content ad-parallax-between-content"><div class="lazy" id="div-gpt-ad-inarticle-1"></div></span>',
+            a2 = '<span class="mv1 articledfp text-center ads-between-content"><div class="lazy" id="div-gpt-ad-inarticle-2"></div></span>',
+            a3 = '<span class="mv1 articledfp text-center ads-between-content"><div class="lazy" id="div-gpt-ad-inarticle-3"></div></span>'
+        ;
+        t=document.createElement("div");
+        t.innerHTML=a1;
+        var nativeAd1 = t.firstChild;
+        t.innerHTML=a2;
+        var nativeAd2 = t.firstChild;
+        t.innerHTML=a3;
+        var nativeAd3 = t.firstChild;
+        gptadslots['insert-native-ads-javascript'] = {
+          'minimum':  { 'value': 3, 'native-ad': nativeAd1 },
+          'medium':   { 'value': 7, 'native-ad': nativeAd2 },
+          'maximum':  { 'value': 10, 'native-ad': nativeAd3 },
+          'count-from': 'start',
+          'one-ad':   false,
+          'parent-selector': ".node--type-article .article-page .field-name-body .field-item, .node--type-blog .blog-page-overrides .field-name-body .field-item",
+          'count-selector': "p" || "div",
+        };
+      </script>
+  </head>
+  <body{{ attributes.addClass(body_classes) }}>
+  <a href="#main-content" class="visually-hidden focusable skip-link">
+    {{ 'Skip to main content'|t }}
+  </a>
+  {{ page_top }}
+  {{ page }}
+  {{ page_bottom }}
+  <js-bottom-placeholder token="{{ placeholder_token }}">
+    <div id="parsely-root" style="display: none">
+      <div id="parsely-cfg" data-parsely-site="agweb.com"></div>
+    </div>
+    <script>
+      (function (w) {
+       if (window.top != window.self) w = window.top;
+       w.dataLayer = w.dataLayer || [];
+       w.dataLayer.push({'event': 'loadParsely'});
+      })(window);
+    </script>
+    <script type="text/javascript">
+    window._taboola = window._taboola || [];
+    _taboola.push({flush: true});
+    </script>
+  </body>
+</html>

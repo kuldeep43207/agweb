@@ -1,0 +1,73 @@
+.right-sidebar {
+
+  .block-mostrecentpoll, .block-poll-recent-block {
+    padding: 10px 15px;
+    border: 1px solid $border_lgrey;
+    margin: 20px 0;
+    .form-item-choice {
+      position: relative;
+      left: 20px;
+    }
+
+    .form-actions {
+      text-align: center;
+      .button {
+        background-color: $crops_color;
+        margin-bottom: 0;
+        &:first-child {
+          min-width: 100px;
+
+          &#edit-vote {
+            @include above-medium {
+              margin-bottom: 15px;
+            }
+          }
+        }
+      }
+    }
+
+    h2 {
+      font-size: 20px;
+    }
+
+    .poll {
+      .choice-result {
+        &:first-of-type {
+          .foreground {
+            background-color: $news_color;
+          }
+        }
+        &:nth-of-type(2) .foreground {
+          background-color: $weather_color;
+        }
+        &:nth-of-type(3) .foreground {
+          background-color: $link_blue;
+        }
+        &:nth-of-type(4) .foreground {
+          background-color: $hover_green;
+        }
+      }
+
+      .form-actions {
+        position: relative;
+
+        .ajax-progress {
+          position: absolute;
+          top: 0px;
+          left: 0px;
+          right: auto;
+          width: 100%;
+          background: $white;
+        }
+      }
+    }
+  }
+
+  .view-more-polls {
+    text-align: center;
+    margin: 15px 0 5px;
+    .view-more-polls-link:hover {
+      color: $news_color;
+    }
+  }
+}

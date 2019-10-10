@@ -1,0 +1,241 @@
+// What a day View Content style
+.what-a-day-view-content {
+
+  .what-a-day-img {
+    position: relative;
+    height: 500px;
+
+    @include below-medium {
+      height: auto;
+    }
+
+    img {
+      width: 100%;
+      overflow: hidden;
+    }
+  }
+
+  .what-a-day-description {
+    position: absolute;
+    bottom: 0;
+    background-color: $link_black;
+    width: 100%;
+    color: $white;
+    opacity: 0.8;
+    padding: 10px 20px 15px 20px;
+
+    .title {
+      font-size: 20px;
+      padding-bottom: 5px;
+      display: block;
+    }
+
+    .description {
+      font-size: 16px;
+      display: block;
+      padding: 10px 20px;
+    }
+
+    @include below-medium {
+      position: static;
+      min-height: 150px;
+    }
+  }
+}
+
+// Slider navigation style
+.slider-for-what-a-day-nav,
+.what-a-day-harvest-slider-nav,
+.photo-gallery-slider-nav {
+  margin-top: 20px;
+  @include slick-display;
+  margin-bottom: 30px;
+
+  @include below-medium {
+    margin-bottom: 45px;
+  }
+
+  .slick-prev {
+    display: grid;
+    width: 30px;
+    color: $crops_color;
+    background-color: $crops_color;
+
+    &:before {
+      content: "\f053";
+      font-family: fontAwesome;
+      font-size: 26px;
+      position: absolute;
+      left: 5px;
+      top: 23px;
+      color: $white;
+    }
+
+    &:focus {
+      outline: 0;
+    }
+  }
+
+  .slick-next {
+    display: grid;
+    width: 40px;
+    color: $crops_color;
+    background-color: $crops_color;
+
+    &:after {
+      content: "\f054";
+      font-family: fontAwesome;
+      font-size: 26px;
+      position: absolute;
+      right: 5px;
+      top: 23px;
+      color: $white;
+    }
+
+    &:focus {
+      outline: 0;
+    }
+  }
+
+  .slick-list {
+    border: 5px solid $border_lgrey;
+    width: 100%;
+
+    .views-field-field-image img {
+      max-height: 57px;
+      margin: 0 2px;
+      outline: none;
+      border-right: 2px solid $white;
+      min-height: 57px;
+      width: 100%;
+      min-width: 100px;
+      cursor: pointer;
+    }
+  }
+}
+
+// Slider Style
+.slider-for-what-a-day,
+.what-a-day-harvest-slider,
+.photo-gallery-slider {
+
+  .slick-prev {
+    position: absolute;
+    z-index: 999;
+    color: $white;
+    top: 40%;
+    font-size: 0px;
+    width: 60px;
+    height: 100px;
+    outline: none;
+    background-color: $link_black;
+    opacity: 0.4;
+
+    &:after {
+      content: '\f104';
+      font-family: FontAwesome;
+      display: block;
+      font-size: 40px;
+      padding: 20px;
+    }
+
+    &:hover {
+      @include slider-controls-opacity;
+      opacity: 0.9;
+    }
+
+    @include above-small {
+      height: 80px;
+      top: 27%;
+    }
+  }
+
+  .slick-next {
+    position: absolute;
+    z-index: 999;
+    right: 0;
+    color: $white;
+    top: 40%;
+    font-size: 0px;
+    width: 60px;
+    height: 100px;
+    outline: none;
+    background-color: $link_black;
+    opacity: 0.4;
+
+    &:before {
+      content: '\f105';
+      font-family: FontAwesome;
+      display: block;
+      font-size: 40px;
+      padding: 20px;
+    }
+
+    &:hover {
+      @include slider-controls-opacity;
+      opacity: 0.9;
+    }
+
+    @include above-small {
+      height: 80px;
+      top: 27%;
+    }
+  }
+}
+
+.what-a-day-page {
+
+  .block-page-title-block {
+    h1 span {
+      min-height: 32px;
+      display: block;
+      font-size: 24px;
+      color: $link_black;
+      line-height: 1.1;
+      font-weight: 600;
+    }
+  }
+
+  .block-views-block-what-a-day-test-block-3 {
+    margin-top: 80px;
+  }
+}
+
+.js-pager__items {
+  width: 100%;
+  text-align: center;
+
+  li {
+    background-color: inherit;
+    display: inline-block;
+    margin: 0px 5px;
+
+    @include small-only {
+      margin: 0px;
+    }
+
+    &.current {
+      background: $crops_color;
+
+      a {
+        color: $white;
+      }
+    }
+
+    a {
+      padding: .1875rem .625rem;
+      border-radius: 0;
+      color: $technology_color;
+
+      @include small-only {
+        padding: 0px 4px;
+        font-size: 13px;
+      }
+
+      &:hover {
+        background-color: $crops_color;
+        color: $white;
+      }
+    }
+  }
+}

@@ -1,0 +1,591 @@
+#market_future_data {
+  margin-top: 10px;
+  width: 100%;
+  clear: left;
+  border-bottom: 2px solid $future_table_row_color;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  display: inline-block;
+
+  .market-filter-select-wrapper {
+    padding: 15px 0px;
+
+    .market-dropdown {
+      background: $markets_color;
+      color: $white;
+      border: 1px solid $markets_color;
+      font-size: 12px;
+      font-weight: 600;
+      position: relative;
+      background-image: url(../images/angle-down-solid.svg);
+      background-position: right 0rem center;
+      background-repeat: no-repeat;
+      background-size: 26px 19px;
+      cursor: pointer;
+
+      @include small-only {
+        margin-bottom: 0px;
+      }
+    }
+
+    .market-filter-select {
+      position: relative;
+      max-width: 16.28%;
+      flex: auto;
+      padding-right: 0;
+
+      &:last-child {
+        padding-right: 15px;
+      }
+
+      @include small-only {
+        &:nth-child(1) {
+          padding-right: 0px;
+        }
+
+        &:nth-child(2) {
+          padding-right: 0px;
+        }
+
+        &:nth-child(4) {
+          padding-right: 0px;
+        }
+
+        &:nth-child(5) {
+          padding-right: 0px;
+        }
+
+        &:nth-child(7) {
+          padding-right: 0px;
+        }
+      }
+
+      @include above-medium {
+        max-width: 20%;
+        flex: auto;
+        margin-bottom: 10px;
+      }
+
+      @include above-small{
+        margin-bottom: 10px;
+        max-width: 33.3% !important;
+        flex: auto;
+        width: 33.3%;
+        padding-right: 15px;
+      }
+
+      @include below-medium {
+        max-width: 25%;
+        flex: auto;
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  h3 {
+  	font-size: 15px;
+    font-family: $font_montserrat;
+    font-weight: 600;
+    color: $market_future_color;
+    border-bottom: 0px !important;
+    margin-bottom: 0;
+    line-height: 100%;
+    text-transform: uppercase;
+  }
+
+  .markets-data-cols-wrapper {
+    margin-right: -.9375rem;
+    margin-left: -.9375rem;
+
+    .markets-data-cols {
+      width: 33.3%;
+      padding: 0px 15px;
+
+      @include above-medium {
+        width: 50%;
+      }
+
+      @include below-medium  {
+        width: 50%;
+      }
+
+      @include small-only  {
+        width: 100%;
+      }
+
+      .markets-future-data {
+
+        table tr td:first-child a {
+          color: $technology_color;
+          border-bottom: 1px solid $technology_color;
+        }
+
+        table tr td:first-child h4 a {
+          border-bottom: 0px;
+        }
+
+        table tr:nth-child(even) {
+          background-color: $white;
+        }
+
+        table tbody tr:nth-child(1) {
+          background-color: $future_table_row_color;
+
+          td {
+            padding-left: 5px;
+          }
+        }
+
+        table thead tr:nth-child(1) {
+          background-color: $white;
+        }
+      }
+    }
+  }
+
+  .markets-filters-tag-links {
+    padding: 0px;
+    margin: 0px;
+    line-height: 100%;
+
+    a {
+      padding-right: 7px;
+      color: $technology_color;
+      border-right: 1px solid $technology_color;
+      line-height: 100%;
+      margin-bottom: 10px;
+      display: inline-block;
+      font-size: 13px;
+
+      &:first-child {
+        color: $markets_color;
+        padding-left: 0px;
+      }
+
+      &:last-child {
+        border-right: 0px;
+      }
+
+      &.active {
+        color: $markets_color;
+      }
+    }
+
+    + h4 {
+      margin-bottom: 0px;
+    }
+  }
+  .market-profile-tags-links {
+    margin: 5px 0px 10px 0px;
+
+    .futures-profile-links {
+      font-size: 12px;
+      color: $technology_color;
+      text-decoration: underline;
+    }
+
+    a {
+      text-decoration: underline;
+    }
+  }
+
+  table {
+    width: 100%;
+    border-collapse: unset;
+
+    th, td {
+      font-size: 12px;
+      padding: 5px 10px 5px 5px;
+      text-align: left;
+      color: $technology_color;
+    }
+
+    h4 {
+      line-height: 100%;
+
+      a {
+        font-size: 13px;
+        font-family: $font_montserrat;
+        font-weight: 600;
+        color: $technology_color;
+      }
+    }
+  }
+
+  h4 {
+    font-family: $font_montserrat;
+    color: $dark_grey;
+    font-size: 13px;
+    font-weight: 700;
+    clear: left;
+
+    ~ div {
+      a {
+        color: $technology_color;
+        font-size: 12px;
+      }
+    }
+  }
+
+  .future-data-links {
+    width: 38%;
+    float: left;
+
+    @include above-small {
+      width: 100%;
+    }
+
+    > div {
+      margin: 3px 0px;
+      float: left;
+      width: 100%;
+
+      span {
+        float: left;
+      }
+
+      .futures-links-text-decoration {
+        text-decoration: underline;
+      }
+    }
+
+    h4 {
+      margin: 0px;
+    }
+  }
+
+  .future-data-date {
+
+    h4 {
+      margin-top: 10px;
+      margin-right: 20px;
+    }
+
+    span select {
+      margin: 0px;
+      height: 30px;
+      padding-left: 15px;
+    }
+  }
+
+  .future-data-month {
+    width: 40%;
+    float: left;
+    padding: 10px;
+    margin-bottom: 10px;
+
+    @include above-small {
+      width: 100%;
+      padding: 0px;
+    }
+
+    > div {
+      width: 100%;
+      margin: 0px;
+      float: left;
+    }
+
+    .month-dropdown {
+      font-size: 12px;
+      background-color: $weather_grey;
+    }
+  }
+
+  .future-data-legends {
+    width: 22%;
+    display: block;
+    margin-bottom: 15px;
+    float: left;
+
+    @include above-small {
+      width: 100%;
+    }
+
+    ~ div {
+      float: left;
+      width: 100%;
+
+      h4 {
+        clear: none;
+      }
+    }
+
+    a {
+      display: block;
+      padding: 5px 0px;
+      text-decoration: underline;
+
+      @include above-small {
+        float: left;
+        padding-right: 10px;
+      }
+    }
+  }
+
+  .market-profile-table {
+    margin-top: 5px;
+
+    a {
+      padding: 0px 10px;
+      color: $technology_color;
+      border-right: 1px solid $technology_color;
+      line-height: 100%;
+      margin-bottom: 10px;
+      float: left;
+
+      &:first-child {
+        color: $markets_color;
+        padding-left: 0px;
+      }
+
+      &:last-child {
+        border-right: 0px;
+      }
+    }
+  }
+
+  .markets-profile-table-scroll {
+
+    table {
+      width: auto;
+      margin-bottom: 10px;
+
+      tr {
+        background-color: $white!important ;
+        td a {
+          color: $technology_color;
+          border-bottom: 1px solid $technology_color;
+        }
+      }
+    }
+  }
+
+  .table-scroll {
+
+    table {
+      width: 100%;
+      margin-bottom: 10px;
+
+      tr {
+        background-color: $white!important ;
+        td a {
+          color: $technology_color;
+          border-bottom: 1px solid $technology_color;
+        }
+      }
+    }
+
+    .futures-scrolling-tables {
+      th, td {
+        width: 100px;
+        color: $technology_color;
+      }
+    }
+  }
+
+  .ui-button {
+    padding: 10px 5px;
+    width: 100%;
+    background: $market_future_color;
+    color: $white;
+    border: 1px solid $market_future_color;
+    font-size: 13px;
+    position: relative;
+    cursor: pointer;
+    float: left;
+    text-align: center;
+    border-radius: 0;
+    background-position: right -0.2rem center;
+    background-repeat: no-repeat;
+    background-size: 26px 15px;
+    text-transform: uppercase;
+
+    &:focus {
+      outline: none;
+    }
+
+    @include small-only {
+      padding: 10px 4px;
+      text-transform: capitalize;
+      font-size: 11px;
+    }
+  }
+
+  .ui-selectmenu-button-closed {
+    background-image: url(../images/angle-down-solid.svg);
+  }
+
+  .ui-selectmenu-button-open {
+    background-image: url(../images/angle-up-solid.svg);
+  }
+
+  .ui-selectmenu-text {
+    white-space: nowrap;
+    margin-right: 15px;
+  }
+
+  .ui-selectmenu-icon {
+    display: none;
+  }
+
+  .panel-info {
+
+    .panel-heading {
+      .panel-title {
+        padding: 5px 5px 5px 0px;
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .markets-commodity-title {
+    color: $market_future_color;
+    font-size: 16px;
+    text-transform: uppercase;
+  }
+
+  .futures-charts-links-values {
+    margin: 15px 0px 10px 0px;
+    clear: left;
+
+    a {
+      margin-right: 15px;
+      text-decoration: underline;
+    }
+  }
+
+  .futures-charts-table {
+
+    td, th {
+      padding-left: 0px;
+    }
+  }
+
+  .markets-selected-options {
+    background-color: $future_table_row_color;
+    line-height: 100%;
+  }
+
+  .detailed-quote-charts-links {
+    margin-top: 30px;
+    display: inline-block;
+  }
+
+  .markets-options-content {
+
+    p {
+      font-size: 12px;
+      margin-bottom: 5px;
+    }
+
+    li {
+      font-size: 12px;
+      margin-bottom: 15px;
+    }
+  }
+}
+
+.ui-selectmenu-menu {
+
+  .ui-widget-content {
+    border: 1px solid $market_future_color;
+    position: absolute;
+    background-color: $white;
+    margin: 0px;
+
+    li {
+      list-style: none;
+      padding: 0px 5px;
+      cursor: pointer;
+
+      &:hover {
+        background-color: $market_future_color;
+        color: $white;
+
+        .ui-state-active {
+          color: $white;
+        }
+      }
+
+      .ui-menu-item-wrapper {
+        font-size: 12px;
+        color: $technology_color;
+        padding: 5px 0px;
+
+        &.ui-state-active {
+          background-color: transparent;
+          border: 0px;
+          color: $technology_color;
+
+          &:hover {
+            color: $white;
+          }
+        }
+      }
+    }
+  }
+}
+
+.markets-profile-headings {
+  background-color: $hover_grey;
+  padding: 3px;
+  margin-bottom: 15px;
+}
+
+.path-markets {
+  overflow-x: hidden;
+  background-color: $white !important;
+}
+
+.markets-cme-logo {
+
+  p {
+    line-height: 100%;
+    font-size: 12px;
+
+    a {
+      padding: 0px 10px;
+
+      &:first-child {
+        img {
+          width: 80px;
+        }
+      }
+    }
+  }
+}
+
+.responsive-markets-futures-charts {
+  overflow-x: auto;
+  margin-bottom: 20px;
+}
+
+.table-user-information {
+  width: auto;
+
+  td {
+    &:first-child {
+      font-weight: 700;
+    }
+  }
+}
+
+.block-marketsfuturecmeinfo {
+  float: left;
+  width: 100%;
+}
+
+.market-filter-border {
+  border-bottom: 2px solid $future_table_row_color;
+  margin: 0px 0px 15px 0px;
+}
+
+.ui-selectmenu-menu {
+  .ui-menu {
+    .ui-menu-item {
+      &:first-child {
+        display: none;
+      }
+    }
+  }
+}

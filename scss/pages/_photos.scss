@@ -1,0 +1,30 @@
+.listing-photos {
+  margin-bottom: 35px;
+
+  img {
+    @include small-only {
+      width: 135px;
+    }
+  }
+
+  h2 a {
+    font-size: 20px;
+    font-weight: 600;
+    color: $technology_color;
+
+    @include small-only {
+      font-size: 16px;
+    }
+  }
+
+  .author-name a {
+    color: $crops_color;
+  }
+}
+
+.photo-gallery-node-content {
+
+  .posted {
+    display: none;
+  }
+}

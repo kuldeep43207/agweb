@@ -1,0 +1,378 @@
+.article-page {
+
+  p {
+    margin-bottom: 34px;
+    font-size: 18px;
+    line-height: 34px;
+    font-family: $font_montserrat;
+    color: $link_black;
+    word-break: break-word;
+  }
+
+  .article-category {
+    a {
+      font-family: $font_montserrat;
+      font-size: 1rem;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+      display: inline-block;
+      font-weight: 600;
+
+      &.crops {
+        color: $crops_color;
+      }
+      &.technology {
+        color: $technology_color;
+      }
+      &.news {
+        color: $news_color;
+      }
+      &.markets {
+        color: $markets_color;
+      }
+      &.weather {
+        color: $weather_color;
+      }
+      &.business {
+        color: $business_color;
+      }
+      &.crops {
+        color: $crops_color;
+      }
+      &.livestock {
+        color: $livestock_color;
+      }
+
+      &.row {
+
+        &.article-category-link-title {
+          margin-left: 0px;
+        }
+      }
+    }
+  }
+
+  .block-pagetitle {
+    h1 {
+      margin-bottom: 24px;
+      span {
+        font-size: 2.8125rem;
+        font-weight: 600;
+      }
+    }
+  }
+
+  .article-page-author {
+    @include flex;
+    align-items: center;
+    margin-bottom: 21px;
+    article {
+      @include flex;
+      align-items: center;
+
+      .field-type-image {
+        margin-right: 10px;
+
+        img {
+          width: 42px;
+          height: auto;
+        }
+      }
+
+      .field-user--field-full-name {
+        .field-item {
+          display: inline-block;
+          font-size: 0.9375rem;
+          color: $link_black;
+          margin-right: 15px;
+          a {
+            color: $link_black;
+          }
+        }
+      }
+    }
+  }
+
+  .field-media--field-media-image {
+    img {
+      width: 100%;
+      margin-bottom: 24px;
+    }
+  }
+
+  .field-media--field-bynder-id {
+
+    img {
+      width: 100%;
+      margin-bottom: 24px;
+    }
+  }
+
+  .article-page-social {
+    ul {
+      display: block;
+      margin: 0;
+      li {
+        display: block;
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  .article-page-summary {
+    margin-top: 36px;
+    margin-bottom: 20px;
+  }
+
+  .agweb-summary-wrapper {
+    float: left;
+    width: 100%;
+  }
+
+  .article-page-tags {
+    @include flex;
+    font-family: $font_montserrat;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    font-size: 0.9375;
+    margin-right: 5px;
+    margin-bottom: 40px;
+
+    @include small-only {
+      margin-bottom: 15px;
+    }
+
+    .field-node--field-tags {
+      margin-left: 10px;
+
+      .field-items {
+        @include flex;
+        flex-wrap: wrap;
+
+        .field-item {
+          @include above-small {
+            margin-bottom: 20px;
+          }
+
+          a {
+            padding: 6px 9px;
+            line-height: 1;
+            margin: 0 10px 10px 0;
+            font-size: 0.8125rem;
+            border: 1px solid $link_grey;
+            color: $link_black;
+            text-transform: lowercase;
+            float: left;
+
+            &:hover {
+              background: $crops_color;
+              color: $white;
+              border: 1px solid $crops_color;
+            }
+          }
+        }
+      }
+    }
+
+    .field-label {
+      display: none;
+    }
+  }
+
+  @include small-only {
+    .article-category {
+      font-size: 20px;
+    }
+
+    .block-pagetitle {
+      h1 span {
+        font-size: 1.8rem;
+      }
+    }
+
+    .block-socialsharingblock {
+      ul {
+        display: inline-flex;
+      }
+    }
+  }
+
+  .block-views-blockyou-might-like-block-1 {
+    margin-top: 70px;
+
+    @include below-medium {
+      margin-top: 0px;
+    }
+
+    .block-title {
+      margin-bottom: 30px;
+      font-weight: normal;
+
+      @include small-only {
+        margin-bottom: 15px;
+      }
+    }
+
+    .article-page-you-might-like {
+
+      .you-might-like-content {
+        padding-bottom: 60px;
+
+        @include small-only {
+          padding-bottom: 20px;
+        }
+
+        .views-field-primary-category {
+          a {
+            font-family: "Montserrat", sans-serif;
+            font-size: 1rem;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+            color: $link_black;
+            display: inline-block;
+            font-weight: 600;
+            &.business {
+              color: $business_color;
+            }
+            &.weather {
+              color: $weather_color;
+            }
+            &.crops {
+              color: $crops_color;
+            }
+            &.technology {
+              color: $technology_color;
+            }
+            &.livestock {
+              color: $livestock_color;
+            }
+            &.markets {
+              color: $markets_color;
+            }
+            &.machinery {
+              color: $markets_color;
+            }
+            &.news {
+              color: $news_color;
+            }
+          }
+        }
+
+        .views-field-title {
+          span a {
+            font-size: 1rem;
+            line-height: 1.1;
+            font-weight: 600;
+            color: $link_black;
+          }
+        }
+
+        .views-field-field-featured-image{
+          img {
+            margin-bottom: 24px;
+            width: 100%;
+          }
+        }
+
+        .views-field-created {
+          span {
+            font-size: 85%;
+            font-family: $font_montserrat;
+            letter-spacing: 1px;
+          }
+        }
+      }
+    }
+  }
+
+  .field-name-field-comment-name {
+    @include flex;
+    margin-bottom: 15px;
+
+    .field-label {
+      margin-right: 30px;
+    }
+  }
+
+  .field-name-field-email {
+    @include flex;
+    margin-bottom: 30px;
+
+    .field-label {
+      margin-right: 30px;
+    }
+  }
+
+  .article-page-body {
+    padding-bottom: 45px;
+
+    @include small-only {
+      padding-bottom: 30px;
+    }
+
+    iframe, object, img {
+      max-width: 100%;
+      margin: 0px 15px 10px 15px;
+
+      @include small-only {
+        margin: 0px 0px 10px 0px;
+        width: 100%;
+      }
+    }
+
+    .field-node--field-keyword {
+
+      .field-items {
+        @include flex;
+        flex-wrap: wrap;
+
+        .field-item {
+          margin-bottom: 20px;
+          @include above-small {
+            margin-bottom: 20px;
+          }
+
+          a {
+            padding: 6px 9px;
+            line-height: 1;
+            margin: 0 10px 10px 0;
+            font-size: 0.8125rem;
+            border: 1px solid $link_grey;
+            color: $link_black;
+            text-transform: lowercase;
+
+            &:hover {
+              background: $crops_color;
+              color: $white;
+              border: 1px solid $crops_color;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .keywords-fields-wrapper {
+    @include flex;
+    flex-flow: row-wrap;
+    span {
+      margin-right: 5px;
+      font-family: $font_montserrat;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      font-size: 0.9375;
+    }
+
+    @include small-only {
+      margin-bottom: 15px;
+    }
+
+    .field-label {
+      display: none;
+    }
+  }
+}
+
+.agweb-homepage-ads-row {
+  margin-bottom: 20px;
+}

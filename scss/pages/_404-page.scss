@@ -1,0 +1,26 @@
+.agweb-404-page {
+  
+  .agweb-404-page-title {
+    font-family: $font_montserrat;
+    font-size: 24px;
+    font-weight: 600;
+  }
+  
+  .agweb-404-page-heading {
+    font-family: $font_montserrat;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+  
+  .agweb-404-page-content {
+    font-family: $font_montserrat;
+    margin-bottom: 0px;
+  }
+  
+  img {
+    width: 600px;
+    max-width: 100%;
+    margin: 20px auto;
+  }
+}

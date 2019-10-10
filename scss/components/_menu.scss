@@ -1,0 +1,602 @@
+.block-mainmenu, .block-mainmenuagday-2, .block-mainmenuusfr, .block-mainmenuagritalk {
+  border-top: 1px solid $border_lgrey;
+  border-bottom: 1px solid $border_lgrey;
+
+  ul {
+
+    li {
+
+      ul {
+        display: none;
+      }
+
+      &:first-child a {
+        color: $news_color;
+      }
+
+      &:nth-child(2) a {
+        color: $markets_color;
+      }
+
+      &:nth-child(3) a {
+        color: $weather_color;
+      }
+
+      &:nth-child(4) a {
+        color: $crops_color;
+      }
+
+      &:nth-child(5) a {
+        color: $business_color;
+      }
+
+      &:nth-child(6) a {
+        color: $machinery_color;
+      }
+
+      &:nth-child(7) a {
+        color: $livestock_color;
+      }
+
+      &:nth-child(8) a {
+        color: $technology_color;
+      }
+    }
+  }
+
+  ul.dropdown {
+    justify-content: center;
+
+    li.is-dropdown-submenu-parent {
+      &:hover {
+        .is-dropdown-submenu {
+          display: block !important;
+          z-index: 1111;
+        }
+      }
+
+      a {
+        margin: 0 20px 0px 15px;
+        padding: 0px;
+        font-size: 17px;
+        line-height: 51px;
+        border-bottom: 2px solid transparent;
+      }
+
+      li.is-submenu-item {
+        a {
+          color: $link_grey;
+          padding: 7px 10px 7px 0;
+          font-size: 16px;
+          line-height: 1;
+          font-size: 16px;
+
+          &.is-active {
+            border-bottom: 2px solid transparent;
+          }
+        }
+      }
+
+      a {
+        &::after {
+          border: 0;
+        }
+      }
+
+      &:first-child {
+        a {
+          color: $news_color;
+
+          &:hover {
+            border-bottom: 2px solid $news_color;
+          }
+
+          &.is-active {
+            border-bottom: 2px solid $news_color;
+          }
+        }
+
+        li a:hover {
+          color: $news_color;
+          border-right: 2px solid $news_color;
+          border-bottom: 2px solid transparent;
+        }
+      }
+
+      &:nth-child(2) {
+        a {
+          color: $markets_color;
+
+          &:hover {
+            border-bottom: 2px solid $markets_color;
+          }
+
+          &.is-active {
+            border-bottom: 2px solid $markets_color;
+          }
+        }
+
+        li a:hover {
+          color: $markets_color;
+          border-right: 2px solid $markets_color;
+          border-bottom: 2px solid transparent;
+        }
+      }
+
+      &:nth-child(3) {
+        a {
+          color: $weather_color;
+
+          &:hover {
+            border-bottom: 2px solid $weather_color;
+          }
+
+          &.is-active {
+            border-bottom: 2px solid $weather_color;
+          }
+        }
+
+        li a:hover {
+          color: $weather_color;
+          border-right: 2px solid $weather_color;
+          border-bottom: 2px solid transparent;
+        }
+      }
+
+      &:nth-child(4) {
+        a {
+          color: $crops_color;
+
+          &:hover {
+            border-bottom: 2px solid $crops_color;
+          }
+
+          &.is-active {
+            border-bottom: 2px solid $crops_color;
+          }
+        }
+
+        li a:hover {
+          color: $crops_color;
+          border-right: 2px solid $crops_color;
+          border-bottom: 2px solid transparent;
+        }
+      }
+
+      &:nth-child(5) {
+        a {
+          color: $business_color;
+
+          &:hover {
+            border-bottom: 2px solid $business_color;
+          }
+
+          &.is-active {
+            border-bottom: 2px solid $business_color;
+          }
+        }
+
+        li a:hover {
+          color: $business_color;
+          border-right: 2px solid $business_color;
+          border-bottom: 2px solid transparent;
+        }
+      }
+
+      &:nth-child(6) {
+        a {
+          color: $machinery_color;
+
+          &:hover {
+            border-bottom: 2px solid $machinery_color;
+          }
+
+          &.is-active {
+            border-bottom: 2px solid $machinery_color;
+          }
+        }
+
+        li a:hover {
+          color: $machinery_color;
+          border-right: 2px solid $machinery_color;
+          border-bottom: 2px solid transparent;
+        }
+      }
+
+      &:nth-child(7) {
+        a {
+          color: $livestock_color;
+
+          &:hover {
+            border-bottom: 2px solid $livestock_color;
+          }
+
+          &.is-active {
+            border-bottom: 2px solid $livestock_color;
+          }
+        }
+
+        li a:hover {
+          color: $livestock_color;
+          border-right: 2px solid $livestock_color;
+          border-bottom: 2px solid transparent;
+        }
+      }
+
+      &:nth-child(8) {
+        a {
+          color: $technology_color;
+
+          &:hover {
+            border-bottom: 2px solid $technology_color;
+          }
+
+          &.is-active {
+            border-bottom: 2px solid $technology_color;
+          }
+        }
+
+        li {
+
+          a {
+            padding: 7px 10px 7px 60px;
+
+            &:hover {
+              color: $technology_color;
+              border-right: 2px solid $technology_color;
+              border-bottom: 2px solid transparent;
+            }
+
+            &:before {
+              content: "";
+              background-image: url(../images/nav_agtech.png);
+              background-size: 100%;
+              width: 51px;
+              z-index: 999999;
+              height: 20px;
+              position: absolute;
+              background-repeat: no-repeat;
+              left: 15px;
+              top: 15px;
+            }
+          }
+        }
+      }
+    }
+
+    ul.submenu {
+      border: 0;
+      min-width: 230px;
+      padding: 10px 0;
+      text-align: left;
+      margin-top: 0px;
+      @include dropdown_shadow;
+      background-clip: padding-box;
+      -webkit-transition: all 0.1s ease-in-out;
+      transition: all 0.1s ease-in-out;
+    }
+  }
+}
+
+.block-usefullinks, [class*="block-usefullinks-"] {
+  ul.menu {
+    display: block;
+
+    a {
+      line-height: 1.5;
+      padding: 0 0 3px;
+      color: $link_blue;
+
+      &:hover {
+        color: $dark_grey;
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.toolbar-menu-administration {
+  ul.toolbar-menu {
+    display: block;
+  }
+}
+
+.off-canvas.header-left-menu {
+  width: 320px;
+  background-color: $white;
+  box-shadow: none;
+  @include left-menu-transition;
+  z-index: 1002;
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    &.menu-reveal-left {
+      display: block;
+      margin-top: 52px;
+    }
+
+    &.dropdown {
+      display: block;
+
+      li {
+        width: 100%;
+        cursor: pointer;
+        @include menu_background_color_transition;
+
+        &:after {
+          content: '\f107';
+          font-family: FontAwesome;
+          position: absolute;
+          display: block;
+          width: 10px;
+          height: 21px;
+          top: 9px;
+          right: 25px;
+          font-weight: bold;
+          font-size: 18px;
+        }
+
+        &.sub-dropdown-is-open {
+          &:after {
+            content: '\f106';
+            font-family: FontAwesome;
+            position: absolute;
+            display: block;
+            width: 10px;
+            height: 21px;
+            top: 9px;
+            right: 25px;
+            color: $technology_color;
+            font-weight: bold;
+            font-size: 18px;
+          }
+
+          a {
+            color: $white;
+          }
+
+          &:first-child {
+            background-color: $news_color;
+            @include menu_background_color_transition;
+          }
+
+          &:nth-child(2) {
+            background-color: $markets_color;
+            @include menu_background_color_transition;
+          }
+
+          &:nth-child(3) {
+            background-color: $weather_color;
+            @include menu_background_color_transition;
+          }
+
+          &:nth-child(4) {
+            background-color: $crops_color;
+            @include menu_background_color_transition;
+          }
+
+          &:nth-child(5) {
+            background-color: $business_color;
+            @include menu_background_color_transition;
+          }
+
+          &:nth-child(6) {
+            background-color: $machinery_color;
+            @include menu_background_color_transition;
+          }
+
+          &:nth-child(7) {
+            background-color: $livestock_color;
+            @include menu_background_color_transition;
+          }
+
+          &:nth-child(8) {
+            background-color: $technology_color;
+            @include menu_background_color_transition;
+          }
+
+          ul.submenu {
+            background-color: $hover_grey;
+
+            a {
+              color: $link_grey;
+            }
+          }
+        }
+
+        a {
+          display: inline-block;
+          width: auto;
+          line-height: 1.5;
+
+          &:after {
+            display: none;
+          }
+
+          &:hover {
+            background-color: transparent;
+          }
+        }
+
+        .submenu {
+          position: relative;
+          border: 0;
+          border-top: 1px solid $border_lgrey;
+
+          li {
+            padding: 0;
+
+            a {
+              display: block;
+              margin-left: 0;
+              padding: 12px 22px;
+              line-height: inherit;
+            }
+          }
+
+          li:after {
+            display: none;
+          }
+        }
+
+        &:hover {
+          background-color: $hover_grey;
+        }
+
+        &:first-child a {
+          color: $news_color;
+        }
+
+        &:nth-child(2) a {
+          color: $markets_color;
+        }
+
+        &:nth-child(3) a {
+          color: $weather_color;
+        }
+
+        &:nth-child(4) a {
+          color: $crops_color;
+        }
+
+        &:nth-child(5) a {
+          color: $business_color;
+        }
+
+        &:nth-child(6) a {
+          color: $machinery_color;
+        }
+
+        &:nth-child(7) a {
+          color: $livestock_color;
+        }
+
+        &:nth-child(8) a {
+          color: $technology_color;
+        }
+
+        &.sub-dropdown-is-open {
+          a {
+            color: $white;
+          }
+        }
+      }
+    }
+
+    li {
+      position: relative;
+      border-bottom: 1px solid $border_lgrey;
+
+      a {
+        width: 100%;
+        display: block;
+        padding: 12px 22px;
+        font-family: "Montserrat", sans-serif;
+        font-size: 15px;
+        transition: background 0.3s ease;
+        -webkit-transition: background 0.3s ease;
+        color: $link_black;
+
+        &:focus,
+        &:hover {
+          outline: none;
+          color: $hover_green;
+          background-color: $hover_grey;
+        }
+      }
+    }
+  }
+
+  .close-button {
+    outline: none;
+    width: 24px;
+
+    span {
+      font-size: 27px;
+      line-height: 22px;
+      color: $link_black;
+      font-weight: 400;
+    }
+
+    &:hover {
+      span {
+        color: $crops_color;
+      }
+    }
+  }
+
+  .social-media-links--platforms {
+    margin-left: 0;
+    padding: 0 22px;
+    margin-top: 20px;
+
+    li {
+      padding: .2em 0em;
+
+      span {
+        height: 36px;
+        width: 36px;
+        line-height: 34px;
+        font-size: 14px;
+        margin-right: 10px;
+        border: 1px solid $border_lgrey;
+        border-radius: 50%;
+        display: inline-block;
+        text-align: center;
+        color: $dark-grey;
+        -webkit-transition: all 0.1s ease-in-out;
+        transition: all 0.1s ease-in-out;
+
+        &:hover {
+          color: $white;
+        }
+
+        &.fa-facebook:hover {
+          background-color: $hover_fb;
+          border-color: $hover_fb;
+        }
+
+        &.fa-twitter:hover {
+          background-color: $hover_twitter;
+          border-color: $hover_twitter;
+        }
+
+        &.fa-instagram:hover {
+          background-color: $hover_insta;
+          border-color: $hover_insta;
+        }
+
+        &.fa-youtube:hover {
+          background-color: $hover_youtube;
+          border-color: $hover_youtube;
+        }
+
+        &.fa-google-plus:hover {
+          background-color: $hover_google;
+          border-color: $hover_google;
+        }
+      }
+
+      a {
+        padding: 0;
+
+        &:hover {
+          background-color: transparent;
+        }
+      }
+      border-bottom: 0;
+    }
+  }
+}
+
+.position-left {
+  transform: translateX(-320px);
+  -webkit-transform: translateX(-320px);
+}
+
+.position-left.is-transition-push:after {
+  box-shadow: none;
+}

@@ -1,0 +1,31 @@
+.audio-market-commentary {
+
+  h4 {
+    font-family: $font_montserrat;
+    font-size: 16px;
+    margin-top: 15px;
+  }
+
+  .audio-market-cols {
+    margin-bottom: 15px;
+
+    h2 {
+      font-family: $font_montserrat;
+      font-size: 16px;
+      text-transform: uppercase;
+      font-weight: 600;
+      line-height: 22px;
+      margin-top: 15px;
+      color: $technology_color;
+
+      .audio-market-commentary-link {
+        color: $technology_color;
+        text-decoration: underline;
+      }
+    }
+
+    img {
+      width: 250px;
+    }
+  }
+}

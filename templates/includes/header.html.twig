@@ -1,0 +1,56 @@
+<header class="row responsive-header" role="banner" aria-label="{{ 'Site header'|t }}">
+  {% if linked_site_name or linked_logo %}
+    <div class="large-2 columns">
+      {% if linked_logo %}
+        {{ linked_logo }}
+      {% endif %}
+    </div>
+    <div class="left large-4 columns">
+      {% if is_front %}
+        <h1 id="site-name">{{ linked_site_name }}</h1>
+      {% else %}
+        <div id="site-name">{{ linked_site_name }}</div>
+      {% endif %}
+    </div>
+  {% endif %}
+  <div class="small-4 columns header-left align-self-middle">
+    <button class="header-left-menu-button" type="button" data-toggle="offCanvasLeftOverlap" aria-label="Open Menu">
+      <span class="toggle-box-outer">
+        <span class="toggle-box-inner"></span>
+      </span>
+    </button>
+    <p>
+      <button class="button agweb-search-reveal-button" role="search" aria-label="Search">
+        <i class="fa fa-search" aria-hidden="true"></i>
+      </button>
+    </p>
+    {{ page.search_top }}
+  </div>
+  {% if page.site_brand %}
+    <div class="small-4 columns header-middle align-self-middle">
+      {{ page.site_brand }}
+    </div>
+  {% endif %}
+  {% if page.weather_top %}
+    <div class="small-4 columns header-right align-self-middle">
+      {{ page.weather_top }}
+    </div>
+  {% endif %}
+  {% if page.header %}
+    <div class="large-12 columns site-header show-for-large">
+      {{ page.header }}
+    </div>
+
+    <div class="large-12 columns site-header search-modal-wrapper">
+      <div class="agweb-search-dropdown" id="search_modal">
+        {{ drupal_block('header_search',wrapper=false) }}
+        <a class="agweb-search-close">X</a>
+      </div>
+    </div>
+  {% endif %}
+  {% if page.ad_top %}
+    <div class="small-12 columns header-advt">
+      {{ page.ad_top }}
+    </div>
+  {% endif %}
+</header>

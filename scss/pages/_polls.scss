@@ -1,0 +1,79 @@
+.poll-page {
+
+  .poll-view {
+    border: 1px solid $border_lgrey;
+    padding: 15px;
+    margin: 30px 0px;
+
+    .form-actions {
+      text-align: right;
+      input {
+        background-color: $crops_color;
+        min-width: 100px;
+        margin-left: 20px;
+      }
+    }
+
+    .fieldset-wrapper {
+      position: relative;
+      left: 5px;
+    }
+
+    .foreground {
+      background-color: $business_color;
+    }
+  }
+
+  .poll-question {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid $border_lgrey;
+  }
+
+  .total {
+    float: left;
+    font-size: 22px;
+  }
+
+  .pager {
+    text-align: center;
+
+    .is-active {
+      background-color: $crops_color;
+      a {
+        color: $white;
+        &:hover {
+          background-color: $crops_color;
+        }
+      }
+    }
+
+    .pager__item {
+      padding: 3px 10px;
+      &:hover, a:hover {
+        background-color: $crops_color;
+        color: $white;
+      }
+    }
+
+    &.pager__item--ellipsis {
+      pointer-events: none;
+    }
+  }
+
+  .form-actions {
+    position: relative;
+
+    .ajax-progress {
+      position: absolute;
+      top: 0px;
+      left: auto;
+      right: auto;
+      width: 100%;
+      background: $white;
+      box-shadow: 2px 2px;
+      width: 150px;
+      right: 0px;
+    }
+  }
+}

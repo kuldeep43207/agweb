@@ -1,0 +1,266 @@
+.footer-wrapper {
+  padding: 46px 0 70px;
+  border-top: 1px solid $border_lgrey;
+  border-bottom: 1px solid $border_lgrey;
+  margin-top: 36px;
+
+  #footer-first {
+
+    @include below-medium {
+      margin-bottom: 40px;
+    }
+
+    .block-aboutfooter,
+    .block-aboutusagritalk,
+    .block-aboutusagday,
+    .block-aboutususfr,
+    .block-aboutustopproducer,
+    .block-aboutusfarmjournal {
+      p {
+        margin: 20px 0 30px;
+      }
+    }
+
+    .social-media-links--platforms {
+      margin: 0;
+
+      li {
+
+        &:first-child {
+          padding-left: 0px;
+        }
+
+        span {
+          height: 45px;
+          width: 45px;
+          line-height: 43px;
+          font-size: 14px;
+          margin-right: 0px;
+          border: 1px solid $border_lgrey;
+          border-radius: 50%;
+          display: inline-block;
+          text-align: center;
+          color: $dark-grey;
+          -webkit-transition: all 0.1s ease-in-out;
+          transition: all 0.1s ease-in-out;
+
+          &:hover {
+            color: $white;
+          }
+
+          &.fa-facebook:hover {
+            background-color: $hover_fb;
+            border-color: $hover_fb;
+          }
+
+          &.fa-twitter:hover {
+            background-color: $hover_twitter;
+            border-color: $hover_twitter;
+          }
+
+          &.fa-instagram:hover {
+            background-color: $hover_insta;
+            border-color: $hover_insta;
+          }
+
+          &.fa-youtube:hover {
+            background-color: $hover_youtube;
+            border-color: $hover_youtube;
+          }
+
+          &.fa-google-plus:hover {
+            background-color: $hover_google;
+            border-color: $hover_google;
+          }
+        }
+      }
+    }
+  }
+
+  #footer-middle {
+
+    @include small-only {
+      margin-bottom: 40px;
+      margin-top: 10px;
+    }
+  }
+
+  #footer-last {
+
+    .block-lettertotheeditor,
+    .block-lettertotheeditorusfr,
+    .block-lettertotheeditoragritalk,
+    .block-lettertotheeditoragday,
+    .block-lettertotheeditorfarmjournal,
+    .block-lettertotheeditortopproducer {
+      border-top: 1px solid $border_lgrey;
+      padding-top: 20px;
+
+      h4 {
+        font-size: 15px;
+        font-weight: 600;
+        font-family: $font_montserrat;
+      }
+    }
+
+    .block-editorialrequests,
+    .block-editorialrequestsusfr,
+    .block-editorialrequestsagritalk,
+    .block-editorialrequestsagday,
+    .block-editorialrequestsfarmjournal,
+    .block-editorialrequeststopproducer {
+      p {
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+
+.footer-copyrights {
+  padding: 21px 0;
+  text-align: center;
+}
+
+#footer-brands {
+  margin-bottom: 50px;
+  border-bottom: 1px solid $border_lgrey;
+
+  .footer-brands-list {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+    display: block;
+    margin: 0 0 20px;
+
+    li {
+      display: inline-block;
+      border-right: 2px solid $brands_list_border;
+      padding: 0 10px;
+      text-align: center;
+      margin: 0 0 12px;
+      width: 12%;
+      @include border-box;
+
+      &:first-child a {
+        background-position-x: 0;
+      }
+
+      &:nth-child(2) a {
+        background-position-x: -100px;
+      }
+
+      &:nth-child(3) a {
+        background-position-x: -200px;
+      }
+
+      &:nth-child(4) a {
+        background-position-x: -305px;
+      }
+
+      &:nth-child(5) a {
+        background-position-x: -405px;
+      }
+
+      &:nth-child(6) a {
+        background-position-x: -500px;
+      }
+
+      &:nth-child(7) a {
+        background-position-x: -608px;
+      }
+
+      &:nth-child(8) {
+        border-right: 0;
+
+        a {
+          background-position-x: -708px;
+        }
+      }
+
+      &:nth-child(9) a {
+        background-position-x: -810px;
+      }
+
+      &:nth-child(10) a {
+        background-position-x: -908px;
+      }
+
+      &:nth-child(11) a {
+        background-position-x: -1010px;
+      }
+
+      &:nth-child(12) a {
+        background-position-x: -1110px;
+      }
+
+      &:nth-child(13) a {
+        background-position-x: -1210px;
+      }
+
+      &:nth-child(14) a {
+        background-position-x: -1315px;
+      }
+
+      &:nth-child(15) a {
+        background-position-x: -1415px;
+      }
+
+      &:nth-child(16) {
+        border-right: 0;
+
+        a {
+          background-position-x: -1520px;
+        }
+      }
+
+      &:nth-child(17) a {
+        background-position-x: -1620px;
+      }
+
+      &:nth-child(18) a {
+        background-position-x: -1720px;
+      }
+
+      &:nth-child(19) a {
+        background-position-x: -1920px;
+      }
+
+      &:nth-child(20) a {
+        background-position-x: -2020px;
+      }
+
+      &:nth-child(21) a {
+        background-position-x: -2120px;
+      }
+
+      &:nth-child(22) a {
+        background-position-x: -2220px;
+      }
+
+      &:nth-child(23) a {
+        background-position-x: -2320px;
+        width: 68px;
+      }
+
+      &:nth-child(24) a {
+        background-position-x: -2395px;
+        background-size: 2500px 45px;
+      }
+
+      a {
+        height: 35px;
+        width: 100px;
+        overflow: hidden;
+        display: inline-block;
+        background-size: 2494px 35px;
+        color: transparent;
+        background-image: url("../images/agweb_brands.png");
+        background-repeat: no-repeat;
+      }
+
+      &:last-child {
+        border-right: 0px;
+      }
+    }
+  }
+}

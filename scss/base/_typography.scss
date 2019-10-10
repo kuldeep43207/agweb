@@ -1,0 +1,42 @@
+body {
+  font-family: $font_montserrat;
+  font-size: 15px;
+  font-weight: 400;
+  color: $charcoal;
+  font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font_merriweather;
+  color: $dark_grey;
+  letter-spacing: -0.02em;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+p {
+  font-size: 15px;
+  color: $dark_grey;
+  font-weight: normal;
+  line-height: 26px;
+  margin: 0 0 10px;
+}
+
+::-moz-selection {
+  background-color: $select_color;
+}
+::selection {
+  background-color: $select_color;
+}
+
+.block-pagetitle, [class*="block-pagetitle-"] h1 {
+  font-size: 24px;
+  font-family: $font_montserrat;
+  font-weight: 600;
+}

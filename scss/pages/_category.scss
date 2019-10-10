@@ -1,0 +1,264 @@
+.categories-view,
+.taxonomy-term-view {
+  header {
+    clear: both;
+    width: 100%;
+    line-height: 100%;
+
+    span {
+      padding-left: 15px;
+      font-family: $font_montserrat;
+      font-size: 16px;
+      text-transform: uppercase;
+      font-weight: 600;
+      min-height: 34px;
+      margin-bottom: 10px;
+      display: inline-block;
+
+      a {
+        &.news-link {
+          color: $news_color;
+        }
+
+        &.markets-link {
+          color: $markets_color;
+        }
+
+        &.crops-link {
+          color: $crops_color;
+        }
+
+        &.business-link {
+          color: $business_color;
+        }
+
+        &.weather-link {
+          color: $weather_color;
+        }
+
+        &.machinery-link {
+          color: $machinery_color;
+        }
+
+        &.livestock-link {
+          color: $livestock_color;
+        }
+
+        &.technology-link {
+          color: $technology_color;
+        }
+      }
+
+      &.category-heading-dollar {
+        color: $machinery_color;
+      }
+    }
+  }
+
+  .content-created {
+    font-size: 85%;
+    font-family: $font_merriweather;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+
+  .content-title {
+    line-height: 1.1;
+  }
+
+  .content-body {
+    float: left;
+    width: 100%;
+    line-height: 26px;
+  }
+
+  .content-title a {
+    color: $dark-grey;
+  }
+
+  .categories-author {
+    .author-picture {
+      float: left;
+      margin: 5px 20px 20px 0;
+      border-radius: 50%;
+      overflow: hidden;
+    }
+
+    span {
+      display: block;
+
+      &.author-name a {
+        color: $crops_color;
+        font-weight: bolder;
+      }
+    }
+  }
+
+  .content-body {
+    a {
+      color: $crops_color;
+    }
+
+    p {
+      clear: both;
+    }
+  }
+
+  .social-share-icon {
+    height: 36px;
+    width: 36px;
+    line-height: 34px;
+    font-size: 14px;
+    margin-right: 10px;
+    border: 1px solid $border_lgrey;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    color: $dark-grey;
+    transition: all 0.1s ease-in-out;
+    -webkit-transition: all 0.1s ease-in-out;
+
+    &.social-facebook:hover {
+      color: $white;
+      background-color: $hover_fb;
+      border-color: $hover_fb;
+    }
+
+    &.social-twitter:hover {
+      color: $white;
+      background-color: $hover_twitter;
+      border-color: $hover_twitter;
+    }
+
+    &.social-google:hover {
+      color: $white;
+      background-color: $hover_google;
+      border-color: $hover_google;
+    }
+  }
+
+  .category-wrapper {
+    padding-bottom: 75px;
+  }
+
+  .category-page-ads-wrapper {
+    padding-bottom: 75px;
+  }
+
+  .ads-taxonmy-term-page {
+    padding-bottom: 75px;
+  }
+
+  .category-image-top {
+    text-align: center;
+    margin-bottom: 75px;
+
+    @include small-only {
+      margin-bottom: 30px;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+
+  nav.pager {
+    width: 100%;
+    text-align: center;
+
+    ul {
+      li {
+        background-color: inherit;
+
+        @include small-only {
+          margin: 0px;
+        }
+
+        &.current {
+          background: $crops_color;
+
+          a {
+            color: $white;
+          }
+        }
+
+        &.pager__item--ellipsis {
+          pointer-events: none;
+        }
+
+        a {
+          @include small-only {
+            padding: 0px 4px;
+          }
+
+          &:hover {
+            background-color: $crops_color;
+            color: $white;
+          }
+        }
+      }
+    }
+  }
+}
+// Right Sidebar
+
+.right-sidebar {
+  nav {
+    ul {
+      display: block;
+      margin: 20px 0px;
+
+      li {
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+        border-bottom: 1px solid $border_lgrey;
+
+        &:first-child {
+          font-weight: 600;
+          text-transform: uppercase;
+          font-size: 16px;
+
+          a {
+            color: $business_color;
+          }
+        }
+
+        a {
+          padding: 0;
+          font-family: $font_montserrat;
+          margin-bottom: 10px;
+          font-size: 120%;
+          color: $dark_grey;
+        }
+      }
+    }
+
+    &.block-photosmenu {
+
+      .menu {
+        li a {
+          &:before {
+            content: "\f060";
+            font-family: FontAwesome;
+            padding-right: 10px;
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.categories-view {
+
+  .native-ad-widget {
+
+    @include small-only {
+      margin-bottom: 75px;
+    }
+  }
+}
+
+.pager__item--ellipsis {
+  pointer-events: none;
+}

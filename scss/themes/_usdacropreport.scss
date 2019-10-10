@@ -1,0 +1,9 @@
+.block-usdacropprogresscorn, .block-usdacropprogressspringwheat,
+.block-usdacropprogresscotton, .block-usdacropprogresssoybean {
+  margin: 80px 0;
+
+  .block-title {
+    color: $crops_color;
+    margin-bottom: 20px;
+  }
+}

@@ -1,0 +1,37 @@
+.markets-basic-pages {
+
+  .markets-basic-pages-cols {
+
+    .cbot-ananlysis-heading {
+      margin-top: 0px;
+    }
+
+    h2 {
+      font-family: $font_montserrat;
+      font-size: 16px;
+      text-transform: uppercase;
+      font-weight: 600;
+      margin-top: 15px;
+    }
+
+    h3 {
+      font-family: $font_montserrat;
+      font-size: 16px;
+      text-transform: uppercase;
+      font-weight: 600;
+      margin-top: 15px;
+    }
+
+    .market-sub-heading {
+      font-size: 14px;
+    }
+
+    ul {
+      margin: 0px;
+      li {
+        list-style: none;
+        padding: 5px 0px;
+      }
+    }
+  }
+}

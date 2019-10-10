@@ -1,0 +1,38 @@
+#calendar {
+	margin-top: 40px;
+
+	.fc-header-toolbar {
+
+    @include small-only {
+      width: 200px;
+      margin: 0px auto 15px auto;
+    }
+
+    h2 {
+      @include small-only {
+        font-size: 18px;
+        width: 100%
+      }
+    }
+
+    .fc-left {
+      @include small-only {
+        width: 100%;
+      }
+    }
+
+    .fc-right {
+      @include small-only {
+        width: 100%;
+        margin: 15px 0px;
+      }
+    }
+
+    .fc-center {
+      @include small-only {
+        width: 100%;
+        text-align: center;
+      }
+    }
+  }
+}

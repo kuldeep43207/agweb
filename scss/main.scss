@@ -1,0 +1,76 @@
+@charset 'UTF-8';
+
+// Configuration and helpers
+@import 'utils/variables';
+@import 'utils/mixins';
+
+// base stuff
+@import 'base/typography';
+@import 'base/colors';
+
+// layout related sections
+@import 'layout/topbar';
+@import 'layout/header';
+@import 'layout/body';
+@import 'layout/footer';
+@import 'layout/sidebar';
+
+// components
+@import 'components/menu';
+@import 'components/advertisements';
+@import 'components/comments';
+@import 'components/header-search';
+@import 'components/fj-gdpr-module';
+
+// Page-specific styles
+@import 'pages/home';
+@import 'pages/category';
+@import 'pages/article';
+@import 'pages/events';
+@import 'pages/blog';
+@import 'pages/harvestmap';
+@import 'pages/idea';
+@import 'pages/whataday';
+@import 'pages/cashgrainbids';
+@import 'pages/photos';
+@import 'pages/weather';
+@import 'pages/markets';
+@import 'pages/machinery';
+@import 'pages/gulke';
+@import 'pages/contact';
+@import 'pages/terms';
+@import 'pages/privacypolicy';
+@import 'pages/careers';
+@import 'pages/machinerypete';
+@import 'pages/author';
+@import 'pages/fjmedia';
+@import 'pages/press-release';
+@import 'pages/polls';
+@import 'pages/advertising';
+@import 'pages/audiomarket';
+@import 'pages/marketbasicpages';
+@import 'pages/trailblazer-award';
+@import 'pages/apps';
+@import 'pages/disaster-relief-resource';
+@import 'pages/404-page';
+@import 'pages/weather-maps';
+@import 'pages/market-analysis';
+@import 'pages/sitemap';
+
+// modules specific styles
+@import 'themes/layoutmodule';
+@import 'themes/pollmodule';
+@import 'themes/popularblock';
+@import 'themes/calendar';
+@import 'themes/weatherblock';
+@import 'themes/usdacropreport';
+@import 'themes/marketsblock';
+@import 'themes/ticker';
+@import 'themes/popupblock';
+@import 'themes/search';
+@import 'themes/greenbook-search';
+@import 'themes/recentnewsblock';
+@import 'themes/errors-messages';
+
+// Responsive classes
+@import 'utils/responsive';

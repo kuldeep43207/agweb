@@ -1,0 +1,47 @@
+.block-agweb-planting-maps {
+  margin-top: 20px;
+
+  form {
+    width: 100%;
+
+    input , select {
+      background-color: $border_lgrey;
+      border: $border_lgrey;
+    }
+
+    input:focus {
+      background-color: $white;
+      border: $crops_color;
+    }
+
+    input.button {
+      background-color: $crops_color;
+      color: $white;
+      margin-top: 20px;
+      display: block;
+      clear: left;
+      min-width: 150px;
+      @include small-only { 
+        width: 100%;
+      }
+    }
+
+    .js-form-item {
+      float: left;
+      width: 50%;
+      padding: 0px 20px 0px 0px;
+      margin-bottom: 10px;
+
+      @include small-only { 
+        width: 100%;
+        padding: 0px;
+      }
+    }
+  }
+
+  @include small-only {
+    form {
+      width: 100%;
+    }
+  }
+}

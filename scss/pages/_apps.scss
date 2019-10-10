@@ -1,0 +1,24 @@
+.farm-journal-apps-wrapper {
+
+  .farm-journal-apps-row {
+    margin-bottom: 15px;
+
+    .farm-journal-apps-cols {
+      margin-bottom: 15px;
+
+      @include small-only {
+        text-align: center;
+      }
+
+      .farm-journal-apps-imgs {
+        width: 190px;
+      }
+
+      &:first-child {
+        .farm-journal-apps-imgs {
+          width: 130px;
+        }
+      }
+    }
+  }
+}

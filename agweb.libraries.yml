@@ -1,0 +1,62 @@
+global-styling:
+  css:
+    base:
+      css/main.css: { weight: 100, minified: true }
+  js:
+    js/main.js: { scope: footer }
+  dependencies:
+    - core/normalize
+
+market-future:
+  remote: https://github.com/desandro/masonry
+  remote: https://github.com/jquery/jquery-ui
+  version: 1.12
+  license:
+    name: MIT
+    url: https://github.com/desandro/masonry
+    gpl-compatible: true
+
+  css:
+    theme:
+      //cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css: { type: external }
+
+  js:
+    js/masonry.pkgd.min.js: { }
+    js/masonry-setting.js: {}
+    //cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js: { }
+
+fonts:
+  css:
+    theme:
+      //fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i: { type: external, minified: true }
+      //fonts.googleapis.com/css?family=Merriweather: { type: external, minified: true }
+      #Font-Awesome
+      //cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css: { type: external, minified: true }
+
+slick-carousel:
+  remote: http://kenwheeler.github.io/slick/
+  version: 1.9.0
+  license:
+    name: MIT
+    url: http://kenwheeler.github.io/slick/
+    gpl-compatible: true
+  css:
+    theme:
+      //cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css: { type: external }
+
+  js:
+    //cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js: { type: external }
+    js/slick-settings.js: {}
+
+weather-widget:
+  js:
+    js/weather-settings.js: { scope: footer }
+    //webwidgets.wsi.com/wxwidget.loader.js?cid=891672306: { scope: header }
+
+weather-home-page:
+  js:
+    js/weather-main.js: { scope: footer }
+
+weather-forecast:
+  js:
+    js/weather-forecast.js: { scope: footer }

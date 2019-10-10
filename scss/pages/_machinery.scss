@@ -1,0 +1,40 @@
+.machinery-page-overrides {
+  padding: 0 15px;
+
+  header span{
+    min-height: 0px;
+  }
+
+  footer {
+    width: 100%;
+
+    .more-from-link {
+      @include weather-heading;
+      margin-bottom: 30px;
+
+      @include above-small {
+        text-align: center;
+        padding-right: 0px;
+      }
+
+      a {
+        color: $machinery_color;
+      }
+    }
+
+    .h3-more-link {
+      padding-right: 15px;
+
+      @include above-small {
+        padding-right: 0px;
+      }
+    }
+  }
+
+  .category-wrapper .content-created {
+    padding-left: 0px;
+  }
+  .category-image-top img {
+    width: 100%;
+  }
+}

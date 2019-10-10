@@ -1,0 +1,81 @@
+// Home Page header
+.header-advt {
+  .block-adhomepagetop728x90 {
+    margin-top: 36px;
+    margin-bottom: 30px;
+  }
+}
+
+// Home Page Middle
+.main-content {
+  .block-adhomepagemiddle728x90 {
+    margin: 40px auto;
+  }
+}
+
+// Home Page Right Sidebar
+.right-sidebar {
+  .block-adrightsidebarfirst, .block-adrightsidebarsecond, .block-adrightsidebarthird, .block-adrightsidebarfourth, [class*="block-adrightsidebarfirst-"], [class*="block-adrightsidebarsecond-"], [class*="block-adrightsidebarthird-"], [class*="block-adrightsidebarfourth-"] {
+    margin-bottom: 40px;
+    padding: 10px;
+    border: 1px solid $border_lgrey;
+  }
+}
+
+.header-advt {
+  text-align: center;
+  margin-top: 36px;
+
+  @include small-only {
+    margin-top: 15px;
+  }
+
+  .adblock {
+    padding: 0;
+  }
+}
+
+[class*="block-adslotwidget-"] {
+  text-align: center;
+  clear: left;
+}
+
+.agweb-homepage-ads {
+  border-bottom: 1px solid $border_lgrey;
+  margin-bottom: 20px;
+  padding-bottom: 25px;
+  padding-top: 5px;
+}
+
+.ads-between-content {
+  float: left;
+}
+
+@include small-only {
+  .ads-between-content {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
+
+.ads-between-content:nth-of-type(even) {
+  float: right;
+  padding-left: 20px;
+}
+
+.blog-page-overrides {
+  .ads-between-content {
+    margin: 30px 0px;
+  }
+}
+
+// Machinery page ads
+.machinery-page-overrides {
+  .adblock {
+    padding: 0 0 30px;
+    text-align: center;
+  }
+}
+.ad-parallax-between-content {
+  width: 100%;
+}

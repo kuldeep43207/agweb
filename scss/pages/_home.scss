@@ -1,0 +1,248 @@
+.main-content {
+  .block-views-blocktop-story-block-1 {
+    .block-title {
+      text-transform: uppercase;
+      margin-bottom: 10px;
+      color: $link_black;
+      font-size: 1rem;
+      font-family: $font_montserrat;
+      font-weight: 600;
+    }
+
+    .top-story-view {
+
+      a {
+        &.weather {
+          color: $weather_color;
+        }
+
+        &.technology {
+          color: $technology_color;
+        }
+
+        &.markets {
+          color: $markets_color;
+        }
+
+        &.crops {
+          color: $crops_color;
+        }
+
+        &.news {
+          color: $news_color;
+        }
+
+        &.business {
+          color: $business_color;
+        }
+
+        &.machinery {
+          color: $machinery_color;
+        }
+
+        &.livestock {
+          color: $livestock_color;
+        }
+      }
+
+      .top-story-wrapper {
+
+        @include tablet-width {
+          margin-bottom: 45px;
+        }
+
+        .top-story-view-content {
+          h2 {
+            margin-bottom: 10px;
+
+            @include small-only {
+              margin-bottom: 5px;
+            }
+
+            a {
+              min-height: 32px;
+              display: block;
+              font-size: 24px;
+              color: $link_black;
+              line-height: 1.1;
+              font-weight: 600;
+              margin-bottom: 10px;
+            }
+          }
+
+          .top-story-view-category {
+            margin-bottom: 10px;
+
+            a {
+              font-family: $font_montserrat;
+              font-size: 16px;
+              text-transform: uppercase;
+              font-weight: 600;
+            }
+          }
+
+          span.date {
+            font-size: 85%;
+            letter-spacing: 1px;
+            font-family: $font_merriweather;
+            color: $link_black;
+            margin-left: 8px;
+          }
+        }
+
+        .stretch-small {
+          a {
+            img {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+
+    .block-views-block-top-story-block-2 {
+      .views-row {
+        border-bottom: 1px solid $border_lgrey;
+        margin-top: 24px;
+
+        &:first-child {
+          margin-top: 0;
+        }
+      }
+
+      .views-field-primary-category {
+        font-size: 12px;
+        font-weight: 600;
+      }
+
+      .views-field-title {
+        a {
+          min-height: 32px;
+          font-size: 16px;
+          line-height: 1.1;
+          font-weight: 600;
+          color: $link_black;
+          display: block;
+          margin-bottom: 20px;
+          font-family: $font_merriweather;
+        }
+      }
+    }
+  }
+
+  // Recent news
+  .homepage-custom-layout {
+    h3:first-child {
+      width: 100%;
+      padding-left: 15px;
+      margin-bottom: 36px;
+      font-family: $font_merriweather;
+      font-size: 2.125rem;
+      font-weight: 600;
+
+      @include small-only {
+        padding-left: 7px;
+        font-size: 1.7rem;
+      }
+    }
+
+    .homepage-recentnews-layout-cols {
+
+      @include small-only {
+        margin-bottom: 15px;
+      }
+    }
+  }
+
+  .block-views-block-opinion-block-1 {
+    margin: 45px 0px;
+
+    .opinion-view-wrapper {
+
+      .opinion-author-img {
+        overflow: hidden;
+        text-align: center;
+
+        img {
+          height: auto;
+
+          @include small-only {
+            width: 100%;
+          }
+        }
+      }
+
+      .opinion-view-content {
+
+        span {
+          letter-spacing: 1px;
+          font-size: 85%;
+          font-family: $font_merriweather;
+
+          a {
+            text-transform: uppercase;
+            font-size: 0.75rem;
+            color: $dark_grey;
+            margin-right: 8px;
+            font-weight: 600;
+            font-family: $font_montserrat;
+
+            &:hover {
+              color: $crops_color;
+            }
+          }
+        }
+
+        h2 a {
+          color: $dark_grey;
+        }
+      }
+    }
+  }
+
+  .block-views-block-opinion-block-1{
+    .block-title{
+      font-family: $font_montserrat;
+      text-transform: uppercase;
+      font-size: 1rem;
+      margin-bottom: 15px;
+
+      @include small-only {
+        font-size: 20px;
+      }
+    }
+  }
+
+  @include small-only {
+    .block-views-blocktop-story-block-1{
+
+      .block-title{
+        font-size: 20px;
+      }
+      .top-story-view-content{
+        margin-top: 40px;
+        padding-bottom: 50px;
+      }
+
+      .block-views-blocktop-story-block-2 {
+        .views-row:last-child {
+          border-bottom: 0px;
+        }
+      }
+    }
+
+    .block-views-block-opinion-block-1{
+      .opinion-view-content{
+        padding-top: 40px;
+      }
+    }
+  }
+
+  .agweb-video-block {
+    margin: -30px -15px 10px -15px;
+  }
+}
+
+.hide-overflow {
+  overflow-y: hidden;
+}

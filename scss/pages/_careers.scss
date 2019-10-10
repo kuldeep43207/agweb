@@ -1,0 +1,72 @@
+// Careers Content style
+.agweb-career h3{
+  font-family: $font_montserrat;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 10px 0px;
+
+}
+
+.field-node--field-careers-heading {
+  margin-bottom: 10px;
+
+  .field-item {
+    font-size: 18px;
+    font-weight: 600;
+  }
+}
+
+.field-name-field-careers {
+
+  .paragraph--type--agweb-careers {
+    @include flex;
+    margin-bottom: 20px;
+
+    @include below-medium {
+      margin-bottom: 20px;
+    }
+
+    .field-name-field-job-title {
+      padding-right: 20px;
+
+      .field-item {
+        font-weight: 600;
+        font-size: 14px;
+      }
+    }
+
+    .field-name-field-job-attachments, .field-name-field-attachment-link {
+
+      a {
+        color: $brands_list_border;
+        font-size: 0px;
+        float: left;
+
+        @include small-only {
+          color: $crops_color;
+        }
+
+        &:hover {
+          color: $crops_color;
+        }
+
+        &:before {
+          content: "\f1c1";
+          font-family: FontAwesome;
+          display: block;
+          font-size: 23px;
+          line-height: 100%;
+          padding: 0px;
+        }
+      }
+    }
+  }
+}
+
+.link-color-green {
+  color: $crops_color;
+
+  &:hover {
+    color: $crops_color;
+  }
+}

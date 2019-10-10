@@ -1,0 +1,192 @@
+// Machinerypete Content style
+.agweb-machinery-pete {
+
+  header {
+    width: 100%;
+
+    h3 {
+      padding-left: 15px;
+      text-transform: uppercase;
+      font-size: 24px;
+      font-weight: 600;
+      margin-bottom: 30px;
+    }
+  }
+
+  .card {
+    border: 0px;
+    border-bottom: 1px solid $border_lgrey;
+    padding-bottom: 15px;
+    margin-bottom: 30px;
+
+    img {
+      width: 100%;
+    }
+
+    .card-section {
+      padding: 1rem 0rem;
+
+      a {
+        font-size: 16px;
+        font-weight: 600;
+        font-family: $font_merriweather;
+        color: $technology_color;
+      }
+
+      p {
+        font-size: 14px;
+        font-family: $font_montserrat;
+        color: $technology_color;
+      }
+
+      .created-date {
+        font-weight: 500;
+        text-transform: uppercase;
+        font-size: 12px;
+        font-family: $font_merriweather;
+        color: $technology_color;
+        letter-spacing: 2px;
+      }
+    }
+  }
+
+  footer {
+    padding: 0px 15px;
+  }
+}
+
+.meet-machinery-pete {
+  padding: 3rem 0px;
+  border-top: 1px solid $border_lgrey;
+
+  @include small-only {
+    padding: 3rem 1rem;
+  }
+
+  .meet-machinery-img {
+    overflow: hidden;
+
+    @include above-small {
+      text-align: center;
+      max-width: 100%;
+      flex: auto;
+      margin-bottom: 30px;
+    }
+
+    img {
+      width: auto;
+      border-radius: 50%;
+      max-width: 200px;
+    }
+  }
+
+  .columns {
+
+    @include above-small {
+      max-width: 100%;
+      flex: auto;
+      text-align: center;
+    }
+
+    p {
+      margin: 0px;
+
+      @include above-small {
+        text-align: justify;
+      }
+    }
+  }
+}
+
+.more-machinery-pete {
+  float: left;
+
+  .row {
+
+    h2 {
+      color: $machinery_color;
+      text-transform: uppercase;
+      font-size: 18px;
+      font-family: $font_montserrat;
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+
+    li a {
+      color: $crops_color;
+      line-height: 32px;
+      font-weight: 600;
+    }
+  }
+}
+
+.block-sociallinks-machinery-pete {
+  float: left;
+  margin-top: 45px;
+
+  @include below-medium {
+    margin-top: 10px;
+  }
+
+  ul {
+    text-align: center;
+    margin-left: 0;
+
+    @include below-medium {
+      margin-left: 5px;
+    }
+
+    li {
+      display: inline-block;
+      text-align: center;
+      padding: .2em .35em;
+
+      span {
+        height: 36px;
+        width: 36px;
+        line-height: 34px;
+        font-size: 14px;
+        margin-right: 0px;
+        border: 1px solid #e2e1e8;
+        border-radius: 50%;
+        display: inline-block;
+        text-align: center;
+        color: #49484f;
+        -webkit-transition: all 0.1s ease-in-out;
+        transition: all 0.1s ease-in-out;
+
+        &:hover {
+          color: $white;
+        }
+
+        &.fa-facebook:hover {
+          background-color: $hover_fb;
+          border-color: $hover_fb;
+        }
+
+        &.fa-twitter:hover {
+          background-color: $hover_twitter;
+          border-color: $hover_twitter;
+        }
+
+        &.fa-youtube:hover {
+          background-color: $hover_youtube;
+          border-color: $hover_youtube;
+        }
+      }
+    }
+  }
+}
+
+.machinery-pete-tv {
+  padding-bottom: 30px;
+
+  h2 {
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    color: $link_black;
+    font-size: 18px;
+    font-family: $font_montserrat;
+    font-weight: 600;
+  }
+}

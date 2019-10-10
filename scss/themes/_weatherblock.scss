@@ -1,0 +1,419 @@
+#block-weatherhomepage {
+  display: block;
+  text-align: right;
+
+  .button {
+    background-color: transparent;
+    color: transparent;
+    margin-bottom: 0px;
+
+    @include small-only {
+      padding: .85em 0em;
+    }
+
+    &:hover {
+      background-color: transparent;
+      color: transparent;
+    }
+
+    &:focus {
+      outline: none;
+    }
+
+    .wxmap--current-conditions__root {
+      @include flex;
+      flex-direction: column-reverse;
+
+      @include small-only {
+        min-width: auto;
+      }
+
+      header {
+        background-color: transparent;
+        text-align: center;
+        max-height: 0px;
+        z-index: 1;
+
+        h2 {
+          font-size: 10px;
+          color: $header_weather_font_color;
+          width: 100%;
+          white-space: normal;
+          text-transform: uppercase;
+          font-family: $font_montserrat;
+          font-weight: 600;
+
+          @include above-large {
+            max-width: 160px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            text-transform: uppercase;
+            margin: 0px auto;
+          }
+
+          @include small-only {
+            text-transform: none;
+            margin-top: 5px;
+            line-height: 12px;
+            font-size: 10px;
+            max-width: 70px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            text-transform: uppercase;
+            margin: 0px auto;
+          }
+
+          @include tablet-width {
+            max-width: 150px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            text-transform: uppercase;
+            margin: 0px auto;
+          }
+        }
+
+        .wxmap--header__settings {
+          display: none;
+        }
+      }
+
+      .wxmap--header__primary {
+        white-space: normal;
+      }
+
+      .wxmap--currents-body__root {
+        border: 0px;
+
+        .wxmap--currents-body__primary_sm {
+          @include small-only {
+            margin: 0 auto;
+          }
+
+          .wxmap--currents-body__icon-svg {
+            width: 45px;
+            height: 45px;
+
+            @include below-medium {
+              width: 40px;
+              height: 40px;
+            }
+          }
+        }
+
+        .wxmap--currents-body__phrase {
+          display: none;
+        }
+
+        .wxmap--currents-body__temp {
+          font-size: 30px;
+          position: relative;
+          top: 0px;
+          left: -7px;
+          color: $header_weather_font_color;
+
+          @include small-only {
+            font-size: 18px;
+            left: -12px;
+          }
+        }
+      }
+    }
+  }
+}
+
+#header-weather-modal {
+  padding: 1rem 3rem;
+  background-color: $white;
+
+  &:focus {
+    outline: 0px;
+  }
+
+  @include small-only {
+    padding: 1rem 2rem;
+  }
+
+  .close-button {
+    &:focus {
+      outline: 0px;
+    }
+  }
+
+  p {
+    margin-top: 30px;
+
+    a {
+      display: block;
+      color: $crops_color;
+      width: 50%;
+      float: left;
+
+      @include small-only {
+        width: 100%;
+        float: none;
+        text-align: center;
+      }
+    }
+  }
+
+  .wxmap--current-conditions__root {
+    @include flex;
+    flex-direction: column-reverse;
+
+    header {
+      background-color: transparent;
+      border: 0px;
+      text-align: center;
+
+      h2 {
+        font-weight: 700;
+        font-size: 22px;
+        width: 100%;
+      }
+
+      .wxmap--header__settings {
+        display: none;
+      }
+    }
+
+    .wxmap--currents-body__dark-gray {
+      background: #fff;
+      border: 0;
+    }
+  }
+
+  wx-widget {
+    border: 0;
+    box-shadow: none;
+    padding: 0.5rem 0px;
+
+    .wxmap--search__root_sm {
+
+      input {
+        height: 45px;
+        border: 1px solid $weather_grey_border;
+        border-radius: 0;
+        background-color: $weather_grey;
+        width: 100%;
+        margin-bottom: 24px;
+        padding: 0 45px 0px 12px;
+        @include transition-weather;
+        font-size: 0.9rem;
+
+        &:focus {
+          border: 1px solid $crops_color;
+          background-color: $white;
+        }
+      }
+
+      button {
+        height: 45px;
+        border-radius: 0;
+        background-color: $crops_color;
+        border: 1px solid $crops_color;
+      }
+    }
+  }
+
+  .wxmap--daily__root {
+
+    header {
+      display: none;
+    }
+
+    .wxmap--days__root {
+      border: 0px;
+      margin-top: 20px;
+      border-bottom: 1px solid $weather_grey_border;
+      border-radius: 0px;
+      padding: 0px 0px 20px 0px;
+
+      .wxmap--days__table {
+        -ms-flex-flow: row nowrap;
+        flex-flow: row nowrap;
+        overflow-x: hidden;
+
+        @include small-only {
+          -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+        }
+
+        .wxmap--detailed__root_sm {
+          position: absolute;
+          width: 100%;
+          left: 0;
+          z-index: 999;
+          max-height: 330px;
+
+          .wxmap--detailed__header {
+            margin-bottom: 15px;
+
+            .wxmap--detailed__toggle a {
+              color: $white;
+              max-width: 100%;
+              float: none;
+              width: 100%;
+              background: $weather_tab;
+
+              &:hover {
+                background: $weather_tab;
+                border: 1px solid $weather_tab_active;
+              }
+
+              &.wxmap--detailed__active {
+                background-color: $weather_tab_active;
+
+                &:hover {
+                  background-color: $weather_tab_active;
+                }
+              }
+            }
+
+            a {
+              max-width: 100%;
+              float: none;
+              width: auto;
+            }
+          }
+
+          .wxmap--detailed-body__root_sm {
+            .wxmap--detailed-body__detailed-info {
+              padding-left: 0;
+            }
+          }
+        }
+
+        .wxmap--day__animation-root {
+
+          &:nth-of-type(odd) {
+            background-color: $weather_odd;
+          }
+
+          &:nth-of-type(even) {
+            background-color: $white;
+          }
+
+          .wxmap--day__root {
+            display: block;
+            max-width: 99px;
+            text-align: center;
+            border: 0px;
+
+            @include small-only {
+              @include flex;
+              max-width: 100%;
+            }
+
+            * {
+              border: 0px;
+            }
+
+            .wxmap--conditions-cell__root_sm {
+              min-width: 99px;
+
+              svg {
+                margin: 0 auto;
+              }
+
+              span {
+                display: none;
+              }
+            }
+
+            .wxmap--temp-cell__root_sm {
+
+              .wxmap--temp-cell__value {
+                display: block;
+                width: 100%;
+
+                .wxmap--temp-cell__day {
+                  display: block;
+
+                  span {
+                    color: $news_color;
+                  }
+                }
+
+                .wxmap--temp-cell__night span {
+                  color: $business_color;
+                  font-size: 16px;
+                  font-weight: 600;
+                }
+
+                .wxmap--temp-cell__devider {
+                  display: none;
+                }
+              }
+            }
+          }
+
+          .wxmap--days__root {
+            z-index: 999;
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+
+  .wxmap--search__list {
+    top: -24px;
+    padding: 0px;
+    margin-bottom: 30px;
+    max-height: 200px;
+    overflow-y: scroll;
+
+    @include below-medium {
+      max-height: none;
+    }
+
+    .wxmap--search__item_focused {
+      color: $white !important;
+    }
+
+    .wxmap--search__item {
+      color: $technology_color;
+
+      &:hover {
+        color: $white;
+      }
+    }
+  }
+
+  &.slide-in-down {
+
+    &.mui-enter {
+      @include header_modal_transition_in;
+    }
+  }
+
+  &.slide-in-down {
+
+    &.mui-enter {
+
+      &.mui-enter-active {
+        @include header_modal_slide_down;
+      }
+    }
+  }
+
+  &.slide-out-up {
+
+    &.mui-leave {
+      @include header_modal_transition_out;
+    }
+  }
+
+  &.slide-out-up {
+
+    &.mui-leave {
+
+      &.mui-leave-active {
+        @include header_modal_slide_up;
+      }
+    }
+  }
+}

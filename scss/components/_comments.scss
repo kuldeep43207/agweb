@@ -1,0 +1,175 @@
+.comment-comment-form {
+  margin-top: 20px;
+
+  input, textarea {
+    background-color: $hover_grey;
+    transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    -webkit-transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    border-color: $border_lgrey;
+    box-shadow: none;
+    &:focus {
+      background-color: inherit;
+      border-color: $crops_color;
+    }
+  }
+
+  textarea {
+    min-height: 156px;
+    padding: 8px 16px;
+    margin-bottom: 24px;
+  }
+
+  .field--name-field-website {
+    .description {
+      display: none;
+    }
+  }
+
+  input[type=submit] {
+    height: 54px;
+    padding: 0 36px;
+    background-color: $crops_color;
+    color: $white;
+    border-color: $crops_color;
+    margin-top: 15px;
+
+    &:hover, &:focus {
+      background-color: $crops_color;
+      color: $white;
+      border-color: $crops_color;
+      outline: 0;
+    }
+  }
+
+  @include above-large {
+
+    .field--name-field-comment-name {
+      float: left;
+      padding-right: 15px;
+      width: 33%;
+    }
+
+    .field--name-field-email {
+      float: left;
+      padding: 0 15px;
+      width: 33%;
+    }
+
+    .field--name-field-website {
+      float: left;
+      padding-left: 15px;
+      width: 33%;
+    }
+  }
+
+  #edit-comment-body-0-format {
+    display: none;
+  }
+
+  label.form-required {
+    display: inline-block;
+    position: relative;
+    &:after {
+      content: '*';
+      position: absolute;
+      top: -6px;
+      font-size: 20px;
+    }
+  }
+}
+
+.agweb-users-comments {
+  padding-top: 40px;
+  border-top: 1px solid $border_lgrey;
+  
+  .comment-user-picture {
+
+    img {
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+    }
+  }
+  
+  .agweb-comment-summary {
+
+    p {
+      margin-bottom: 7px;
+      font-size: 15px; 
+      line-height: 28px;  
+      word-break: break-word; 
+    }
+    
+    .field-label {
+      display: none;
+    }
+    
+    .field-name-field-comment-name {
+      margin-bottom: 0px;
+    }
+    
+    .users-comment {
+      margin-bottom: 0px;
+    }
+  }
+
+  .links {
+
+    &.inline {
+      display: flex;
+      flex-flow: row wrap;
+      margin-left: 0;
+      margin-bottom: 30px;
+
+      li {
+        list-style: none;
+        margin-right: 15px;
+        margin-bottom: 10px;
+
+        a {
+          color: $crops_color;
+        }
+      }
+    }
+  }
+
+  .field-comment--field-email {
+    margin-bottom: 30px;
+  }
+}
+
+.agweb-blogs-comments {
+
+  .indented {
+    padding-left: 80px;
+
+    @include tablet-width {
+      padding-left: 20px;
+    }
+
+    @include small-only {
+      padding-left: 15px;
+    }
+  }
+}
+
+.comment-confirm-form {
+
+  .form-actions {
+    margin-top: 20px;
+
+    .success.button {
+      background-color: $crops_color;
+      color: $white;
+      border-color: $crops_color;
+
+      &:hover, &:focus {
+        background-color: $crops_color;
+        color: $white;
+        border-color: $crops_color;
+        outline: 0;
+      }
+    }
+  }
+}
+

@@ -1,0 +1,77 @@
+#main {
+  min-height: 100vh;
+}
+@media (min-width: 576px) {
+  .row {
+    max-width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .row {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .row {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .row {
+    max-width: 1140px;
+  }
+}
+@media (min-width: 1280px) {
+  .row {
+    max-width: 1248px;
+  }
+}
+// Menu Overlay Effect
+
+.js-off-canvas-overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1001;
+}
+
+.main-content {
+  padding-top: 36px;
+}
+// Scroll to top Effect
+
+#back-to-top {
+  z-index: 100;
+  width: 34px;
+  height: 34px;
+  text-align: center;
+  font-size: 12px;
+  position: fixed;
+  bottom: 10px;
+  right: 20px;
+  line-height: 32px;
+  background-color: rgba(35, 35, 41, 0.5);
+  border-radius: 2px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  display: none;
+
+  &.show {
+    display: block;
+  }
+
+  a {
+    display: block;
+    color: $dark-grey;
+  }
+
+  &:hover {
+    background-color: $crops_color;
+
+    a {
+      color: $white;
+    }
+  }
+}
+
+body {
+  background-color: $white;
+}

@@ -1,0 +1,200 @@
+@mixin flex {
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
+@mixin dropdown_shadow {
+  -webkit-box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+@mixin border-box {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+@mixin left-menu-transition {
+  -webkit-transition: transform 0.5s cubic-bezier(0.55, 0, 0.1, 1);
+  -webkit-transition: -webkit-transform 0.5s cubic-bezier(0.55, 0, 0.1, 1);
+  transition: -webkit-transform 0.5s cubic-bezier(0.55, 0, 0.1, 1);
+  transition: transform 0.5s cubic-bezier(0.55, 0, 0.1, 1);
+  transition: transform 0.5s cubic-bezier(0.55, 0, 0.1, 1), -webkit-transform 0.5s cubic-bezier(0.55, 0, 0.1, 1);
+}
+
+// Media Query for small devices
+@mixin small-only {
+  @media screen and (max-width: $small) {
+    @content;
+  }
+}
+
+// Media Query for large devices
+@mixin above-large {
+  @media screen and (min-width: $large) {
+    @content;
+  }
+}
+
+@mixin transition-weather {
+  -webkit-transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+@mixin below-medium {
+  @media screen and (max-width: $medium) {
+    @content;
+  }
+}
+
+@mixin tablet-width {
+  @media screen and (min-width: $small) and (max-width: $medium) {
+    @content;
+  }
+}
+
+@mixin above-medium {
+  @media screen and (min-width: $large) and (max-width: $extra-large) {
+    @content;
+  }
+}
+
+// What a Day Slider Controls
+@mixin slider-controls-opacity {
+  -webkit-transition: opacity 0.5s;
+  -moz-transition: opacity 0.5s;
+  -o-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+}
+
+@mixin slick-display {
+  display: -moz-box !important;
+  display: -ms-flexbox !important;
+  display: -webkit-flex !important;
+  display: flex !important;
+}
+
+@mixin above-small {
+  @media screen and (max-width: $small-up) {
+    @content;
+  }
+}
+
+@mixin below-large {
+  @media screen and (max-width: $large) {
+    @content;
+  }
+}
+
+@mixin ticker-animation {
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-name: ticker;
+  animation-name: ticker;
+  -webkit-animation-duration: 60s;
+  animation-duration: 60s;
+}
+
+@mixin ticker-animation-state {
+  -webkit-animation-play-state: paused;
+  -moz-animation-play-state: paused;
+  -o-animation-play-state: paused;
+  animation-play-state: paused;
+}
+
+@mixin weather-heading {
+  font-size: 18px;
+  font-weight: 600;
+  font-family: $font_montserrat;
+}
+
+@mixin search-placeholder {
+  &::-webkit-input-placeholder {@content}
+  &:-moz-placeholder           {@content}
+  &::-moz-placeholder          {@content}
+  &:-ms-input-placeholder      {@content}
+}
+
+@mixin search-opacity {
+  -webkit-transition: opacity .7s;
+  -moz-transition: opacity .7s;
+  -o-transition: opacity .7s;
+  transition: opacity .7s;
+}
+
+@mixin header_search_shadow {
+  -webkit-box-shadow: 0px 2px 8px -3px $search_grey;
+  box-shadow: 0px 2px 8px -3px $search_grey;
+}
+
+@mixin error_message_shadow {
+  -webkit-box-shadow: 0px 2px 0px $news_color;
+  box-shadow: 0px 2px 0px $news_color;
+}
+
+@mixin success_message_shadow {
+  -webkit-box-shadow: 0px 2px 0px $crops_color;
+  box-shadow: 0px 2px 0px $crops_color;
+}
+
+@mixin header_modal_transition_in {
+  -webkit-transition-duration: .15s;
+  transition-duration: .15s;
+  -webkit-transition-timing-function: linear;
+  transition-timing-function: linear;
+  -webkit-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  transform: translateY(-100%);
+  -webkit-transition-property: opacity, -webkit-transform;
+  transition-property: opacity, -webkit-transform;
+  transition-property: transform, opacity;
+  transition-property: transform, opacity, -webkit-transform;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+@mixin header_modal_transition_out {
+  -webkit-transition-duration: .15s;
+  transition-duration: .15s;
+  -webkit-transition-timing-function: linear;
+  transition-timing-function: linear;
+  -webkit-transform: translateY(0);
+  -ms-transform: translateY(0);
+  transform: translateY(0);
+  -webkit-transition-property: opacity, -webkit-transform;
+  transition-property: opacity, -webkit-transform;
+  transition-property: transform, opacity;
+  transition-property: transform, opacity, -webkit-transform;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+@mixin header_modal_slide_down {
+  -webkit-transform: translateY(0);
+  -ms-transform: translateY(0);
+  transform: translateY(0);
+}
+
+@mixin header_modal_slide_up {
+  -webkit-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  transform: translateY(-100%);
+}
+
+@mixin layout_module_multiselect {
+  -webkit-appearance: none !important;
+  -moz-appearance: none !important;
+  appearance: none !important;
+}
+
+@mixin menu_background_color_transition {
+  -webkit-transition: background-color 0.5s;
+  -moz-transition: background-color 0.5s;
+  -o-transition: background-color 0.5s;
+  -ms-transition: background-color 0.5s;
+  transition: background-color 0.5s;
+}

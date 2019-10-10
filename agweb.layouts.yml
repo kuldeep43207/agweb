@@ -1,0 +1,43 @@
+agweb_homepage:
+  label: 'Agweb Home Page'
+  path: layouts/agweb_homepage
+  template: agweb_homepage
+  category: 'Agweb: 1'
+  regions:
+    topstory_ls:
+      label: Top Stories Left Side
+    topstory_rs:
+      label: Top Stories Right Side
+    opinion:
+      label: Opinion
+    advert:
+      label: Subscribe and Advertisement
+    middle_one:
+      label: Middle First
+    middle_two:
+      label: Middle Second
+    middle_three:
+      label: Middle Third
+    middle_four:
+      label: Middle Fourth
+    middle_five:
+      label: Middle Fifth
+    middle_six:
+      label: Middle Sixth
+  icon: agweb_homepage.png
+
+agweb_articlepage:
+  label: 'Agweb Article Page'
+  path: layouts/agweb_articlepage
+  template: agweb_articlepage
+  category: 'Agweb: 2'
+  regions:
+    article:
+      label: Main Content
+    subscription:
+      label: Subscription Form
+    related:
+      label: Related Content
+    comments:
+      label: Comment sections
+  icon: agweb_articlepage.png

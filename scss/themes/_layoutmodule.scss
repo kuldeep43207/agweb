@@ -1,0 +1,123 @@
+.homepage-custom-layout, .articlepage-custom-layout{
+  .add-block{
+    background-color: $light_sky;
+    padding: 1.5em 0;
+    text-align: center;
+    outline: 2px dashed $border_layout;
+  }
+}
+
+.layout-builder-add-block, .layout-builder-update-block {
+
+  .form-item {
+    padding: 5px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+    select[multiple] {
+      height: auto;
+      border-top: 1px solid $link_grey;
+      border-right: 0 !important;
+      border-bottom: 0 !important;
+      border-left: 0 !important;
+      background-color: transparent !important;
+      @include layout_module_multiselect;
+    }
+  }
+}
+
+.block-news-feed-block, [class*="block-news-feed-block-"] {
+  padding: 10px;
+
+  .block-title {
+    width: 100%;
+    font-size: 24px;
+    font-weight: 600;
+    font-family: $font_montserrat;
+  }
+
+  h2 {
+    width: 100%;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: $font_montserrat;
+  }
+
+  .news-feed-layout {
+    padding-bottom: 10px;
+    border-bottom: 1px solid $weather_grey_border;
+    margin-bottom: 20px;
+
+    .news-feed-layout-title {
+
+      a {
+        display: inline-block;
+        margin-bottom: 0px;
+        font-size: 16px;
+        font-family: $font_merriweather;
+        font-weight: 600;
+        color: $charcoal;
+      }
+    }
+
+    .news-feed-authored-on {
+      font-family: $font_merriweather;
+      font-size: 12px;
+    }
+
+    a {
+      color: $crops_color;
+    }
+  }
+
+  .views-row {
+    padding-bottom: 10px;
+    border-bottom: 1px solid $weather_grey_border;
+    margin-bottom: 20px;
+
+    .views-field-title {
+
+      a {
+        display: inline-block;
+        margin-bottom: 0px;
+        font-size: 16px;
+        font-family: $font_merriweather;
+        font-weight: 600;
+        color: $charcoal;
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
+
+.block-custom-text-block, [class*="block-custom-text-block-"], .block-custom-text-image-block, [class*="block-custom-text-image-block-"] {
+  padding: 10px;
+
+  h2 {
+    font-family: $font_montserrat;
+    font-size: 20px;
+    font-weight: 600;
+
+    @include below-medium {
+      font-size: 16px;
+    }
+  }
+
+  a {
+    margin-left: 5px;
+    text-transform: capitalize;
+    text-decoration: underline;
+    color: $crops_color;
+
+    &:hover {
+      color: $news_color;
+    }
+  }
+
+  img {
+    max-width: 600px;
+    height: 40vh;
+    margin: 15px auto;
+    display: block;
+  }
+}

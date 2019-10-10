@@ -1,0 +1,62 @@
+@-webkit-keyframes ticker {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    visibility: visible;
+  }
+  100% {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
+@keyframes ticker {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    visibility: visible;
+  }
+  100% {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+} 
+
+[id^="block-marketstickerblock"] {
+  position: static;
+  top: 0;
+  width: 100%;
+  overflow: hidden;
+  height: 40px;
+  background-color: $white;
+  padding-left: 100%;
+  box-sizing: content-box;
+  border-bottom: 3px solid $news_color;
+
+  #ticker {
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    white-space: nowrap;
+    padding-right: 100%;
+    box-sizing: content-box;
+    @include ticker-animation;
+
+    &:hover {
+      @include ticker-animation-state;
+    }
+
+    .ticker__item {
+      display: inline-block;
+      padding: 0 10px;
+      padding-right: 10px;
+      font-size: 14px;
+      font-weight: 300;
+      color: $technology_color;
+
+      .spacer {
+        margin: 5px;
+      }
+    }
+  }
+}

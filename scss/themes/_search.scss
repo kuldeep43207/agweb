@@ -1,0 +1,45 @@
+.agweb-search-reveal-button {
+  background-color: $white;
+  color: $link_grey;
+  float: left;
+
+  &:hover, &:focus {
+    background-color: $white;
+    color: $link_grey;
+  }
+}
+
+#agweb-header-search {
+
+  .autocomplete-items {
+    background: $white;
+    border: 1px solid $border_lgrey;
+    @include header_search_shadow;
+
+    .autocomplete-popular-items {
+      
+      .category-tag {
+        column-span: all;
+        padding: 15px 5px 5px 5px;
+      }
+
+      .autocomplete-result {
+        color: $livestock_color;
+        padding: 5px;
+
+        @include small-only {
+          font-size: 12px;
+        }
+
+        &:hover {
+          color: $business_color;
+          text-decoration: underline;
+        }
+      }
+    }
+
+    .autocomplete-top-search {
+      margin-top: 15px;
+    }
+  }
+}

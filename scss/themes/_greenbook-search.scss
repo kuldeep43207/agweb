@@ -1,0 +1,464 @@
+.farmjournal-search-widget {
+  border: 1px solid $weather_grey_border;
+  padding: 10px;
+  width: 100%;
+  min-height: 175px;
+  margin-bottom: 40px;
+
+  #farmjournal-external-search-widget {
+    background-color: $white;
+    border-radius: 2px;
+    transition: box-shadow 200ms cubic-bezier(0.4, 0, 0.2, 1) 0s;
+    vertical-align: top;
+    width: 100%;
+    min-height: 175px;
+    box-shadow: none;
+
+    .header {
+
+      img {
+        padding-left: 0px;
+        padding-top: 15px;
+        width: 80px;
+      }
+
+      .header-text {
+        font-size: 11px;
+        font-family: $font_montserrat;
+        color: $charcoal;
+        margin-left: 15px;
+        display: inline-block;
+        position: absolute;
+        height: 100%;
+        line-height: 47px;
+      }
+
+      .header-text {
+        display: inline-block;
+        position: absolute;
+        margin-left: 2%;
+        height: 100%;
+        line-height: 47px;
+      }
+    }
+
+    .label-section {
+      background: $technology_color;
+      height: 80px;
+
+      .left-float p {
+        color: $white;
+        font-weight: 600;
+        font-family: $font_montserrat;
+        margin: 0 0 0px;
+        font-size: 12px;
+      }
+
+      .in-active {
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
+
+    .footer-text {
+      background: $crops_color;
+    }
+
+    .label-section {
+      background: #323232 none repeat scroll 0 0;
+      display: inline-block;
+      height: 80px;
+      overflow: hidden;
+      width: 100%;
+
+      .left-float {
+        float: left;
+        width: 200px;
+        text-align: center;
+        width: 33%;
+        height: 75px;
+        line-height: 1;
+
+        img {
+          box-shadow: unset;
+          box-shadow: unset;
+          min-height: 35px;
+          margin-top: 7px;
+        }
+      }
+    }
+
+    .footer-text {
+      border: 1px solid transparent;
+      border-radius: 5px;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      -webkit-border-top-left-radius: 5px;
+      -webkit-border-top-right-radius: 5px;
+      -webkit-border-bottom-left-radius: 5px;
+      -webkit-border-bottom-right-radius: 5px;
+      width: 45%;
+      margin-left: 12px;
+      margin-right: 12px;
+
+      .widgetSubmit {
+        display: table;
+        max-height: 40px;
+        height: 37px;
+        text-align: center;
+        width: 100%;
+
+        a {
+          display: table-cell;
+          vertical-align: middle;
+          font-size: 16px;
+          color: $white;
+          font-weight: 500;
+          text-decoration: none;
+          box-shadow: unset;
+          font-weight: normal;
+          box-shadow: unset;
+        }
+      }
+    }
+
+    .seperator {
+      margin-left: 15px;
+
+      div {
+        display: table-cell;
+        vertical-align: middle;
+      }
+    }
+
+    .farmjournal-button {
+      color: $white;
+      font-weight: 500;
+      text-decoration: none;
+      box-shadow: unset;
+      font-weight: normal;
+      font-weight: 300;
+      font-size: 16px;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+
+    .form {
+      width: 45%;
+    }
+
+    .footer-form-section {
+      overflow: hidden;
+      width: 100%;
+      margin-top: 4px;
+
+      .left-float {
+        height: 100%;
+      }
+
+      .form {
+        margin-left: 12px;
+      }
+    }
+
+    .select2-container {
+      width: 100% !important;
+    }
+
+    .up {
+      border-color: transparent transparent $white;
+      border-style: solid;
+      border-width: 0 11px 11px;
+      display: table;
+      height: 0;
+      line-height: 0;
+      margin: 0 auto;
+      text-align: center;
+      transition: all 0.3s ease 0s;
+      width: 0;
+      position: relative;
+      top: -2px;
+    }
+
+    .select2-container--default {
+
+      .select2-selection--single {
+        height: 40px;
+        padding-bottom: 10px;
+        padding-top: 5px;
+
+        .select2-selection__arrow {
+          cursor: pointer;
+
+          b {
+            display: inline-block;
+            height: 0;
+            left: 50%;
+            margin-left: -19px;
+            margin-top: -4px;
+            position: absolute;
+            top: 50%;
+            width: 0;
+            border-style: none;
+          }
+        }
+
+        .select2-selection__rendered {
+          color: #979797;
+        }
+      }
+    }
+
+    .inline-block {
+      display: block;
+    }
+
+    .fancy {
+      line-height: 0.5;
+      text-align: center;
+
+      div {
+        display: inline-block;
+        position: relative;
+
+        &:after {
+          content: "";
+          position: absolute;
+          height: 1px;
+          border-bottom: 1px solid $border_lgrey;
+          border-top: 1px solid $white;
+          top: 0;
+          width: 100%;
+          left: 100%;
+          margin-left: 5px;
+        }
+
+        &:before {
+          content: "";
+          position: absolute;
+          height: 1px;
+          border-bottom: 1px solid $border_lgrey;
+          border-top: 1px solid $white;
+          top: 0;
+          width: 100%;
+          right: 100%;
+          margin-right: 5px;
+        }
+      }
+    }
+
+    .amp {
+      margin: 12px 0;
+
+      div {
+        font-size:12px;
+      }
+    }
+
+    a {
+      outline: 0;
+
+      img {
+        outline: 0;
+
+        &:hover {
+          border: 0;
+          outline: 0;
+        }
+      }
+    }
+
+    form {
+      display: inline-block;
+      width: 100%;
+    }
+
+    .mobile-view {
+
+      .widgetSubmit {
+        width: 100%;
+      }
+    }
+
+    .header {
+      height: 42px;
+      position: relative;
+    }
+
+    .in-active {
+      opacity: .5;
+    }
+
+    .active {
+      opacity: 1;
+    }
+
+    #headersearch {
+      display: none;
+    }
+
+    .form-item {
+      margin-bottom: 0px;
+      max-width: 100%;
+    }
+
+    #farmjournal-pest-button {
+
+      img {
+        margin-top: 15px;
+      }
+    }
+
+    img {
+      -ms-interpolation-mode: bicubic;
+      max-width: inherit;
+    }
+
+    .select2-results {
+      color: $technology_color;
+    }
+
+    .left-float {
+
+      p {
+        position: relative;
+        top: 0px;
+      }
+    }
+
+    .list-item,
+    .text-long ol li,
+    .text-long ul li {
+      margin-left: 0px;
+    }
+
+    .select2-search__field {
+      width: 100%;
+      height: 35px;
+      margin-top: 0px;
+      color: $link_grey;
+    }
+
+    .select2-selection--multiple {
+      height: 40px;
+
+      .select2-selection__rendered {
+        padding: 0 6px;
+      }
+    }
+
+    &:-webkit-input-placeholder {
+      color: $link_grey;
+    }
+
+    &:-moz-placeholder {
+      color: $link_grey;
+      opacity:  1;
+    }
+
+    &:-ms-input-placeholder {
+      color: $link_grey;
+    }
+
+    .select2-selection__choice {
+      display: none;
+    }
+
+    .select2-selection {
+      max-height: 39px;
+      overflow: hidden;
+    }
+
+
+    .footer-form-section .select2-container li,
+    .footer-form-section .select2-container
+    li {
+      .select2-search__field {
+        width: 90%;
+      }
+    }
+
+    .arrow {
+      top: 2px;
+    }
+  }
+
+  #headersearch {
+
+    img {
+      position: relative;
+      top: 0px;
+      width: 24px;
+      margin-left: 0px;
+    }
+  }
+
+  .mobile-view {
+
+    #headersearch {
+
+      img {
+        margin-left: 5px;
+        top: 7px;
+        width: 21px;
+      }
+    }
+  }
+
+  input {
+    font-size: 15px;
+
+    &:-webkit-input-placeholder {
+      font-size: 15px;
+    }
+  }
+}
+
+.select2-container {
+
+  .select2-results__options {
+
+    .select2-results__option--highlighted {
+      background: $crops_color !important;
+    }
+  }
+
+  .select2-search--inline {
+
+    .select2-search__field {
+      margin-top: 11px;
+      font-size: 16px;
+    }
+  }
+
+  &.select2-container--focus {
+    .select2-selection--multiple {
+      border: 1px solid $link_grey;
+    }
+  }
+
+  ul {
+    li {
+      padding-left: 4px;
+      font-size: 14px;
+    }
+  }
+
+  .select2-selection__arrow {
+    position: absolute;
+    right: 1px;
+    top: 10px;
+    padding-right: 6px;
+  }
+}
+
+
+#farmjournal-external-search-widget,
+.select2-container,
+#select2-fj_widget_search-results {
+  font-family: $font_montserrat;
+  font-size: 16px;
+}

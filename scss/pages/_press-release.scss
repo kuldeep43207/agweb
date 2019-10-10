@@ -1,0 +1,21 @@
+.main-content {
+
+  .release-year {
+    font-size: 22px;
+    margin: 20px 0;
+    font-family: $font_merriweather;
+    display: block;
+  }
+
+  .release-content {
+    a {
+      font-size: 16px;
+      color: $crops_color;
+      border-bottom: 1px solid $white;
+      &:hover {
+        color: $news_color;
+        border-bottom: 1px solid $news_color;
+      }
+    }
+  }
+}
